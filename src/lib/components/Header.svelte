@@ -1,16 +1,22 @@
+<script>
+  import Btn from "./Btn.svelte";
+</script>
+
 <nav>
   <a href="/">
     <div class="logo">
-      <img src="/logo.png" alt="logo" />
-      <img src="/logo-text.png" alt="logo-text" />
+      <img src="/images/logo.png" alt="logo" />
+      <img src="/images/logo-text.png" alt="logo-text" />
     </div>
   </a>
-  <ul class="nav-menu">
-    <li><a href="/">Home</a></li>
-    <li><a href="/">Socials</a></li>
-    <li><a href="/">About Us</a></li>
-    <li><button>Get Started</button></li>
-  </ul>
+  <div class="menu-container">
+    <ul class="nav-menu">
+      <li class="menu-item"><a href="/" class="menu-link">Home</a></li>
+      <li class="menu-item"><a href="/" class="menu-link">Socials</a></li>
+      <li class="menu-item"><a href="/" class="menu-link">About Us</a></li>
+    </ul>
+    <Btn>Get Started</Btn>
+  </div>
 </nav>
 
 <style>
@@ -27,10 +33,22 @@
     gap: 5px;
   }
 
+  .menu-container,
   .nav-menu {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .menu-container {
+    gap: 60px;
+  }
+
+  .nav-menu {
     gap: 20px;
+  }
+
+  .menu-item {
+    list-style: none;
   }
 </style>

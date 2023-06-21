@@ -1,0 +1,28 @@
+:root {
+  --bg-color: #fff;
+  --text-color: #000;
+  --hover-color: #711df9;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope/Manrope-VariableFont_wght.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  font-family: Manrope;
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+a:hover,
+a:active {
+  color: var(--hover-color);
+}
