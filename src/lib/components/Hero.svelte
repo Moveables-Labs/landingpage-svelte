@@ -29,6 +29,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+
 }
 
 .text-container{
@@ -66,7 +67,7 @@ button{
     border: none;
     border-radius: 50px;
     padding: 0.85rem 1.5rem;
-    background: #E8D8FD;
+    background: #d8bbfe;
     cursor: pointer;
 }
 
@@ -88,20 +89,21 @@ button:hover {
 
 .image1{
     width: 40%;
+    margin-left: 20%;
 }
 
 .image2{
     z-index: 1;
     position: absolute;
     top: -5%;
-    right: 8%;
+    right: 0%;
     width: 35%;
 }
 
 .inter{
     position: absolute;
     top: -5%;
-    left: 23%;
+    left: 32%;
     width: 25%;
 }
 
@@ -109,8 +111,9 @@ button:hover {
     z-index: 2;
     width: 25%;
     position: absolute;
-    right: 0;
+    right: -5%;
     bottom: 9%;
+    user-select: none;
 }
 
 </style>

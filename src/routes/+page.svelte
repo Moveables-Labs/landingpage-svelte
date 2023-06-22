@@ -15,16 +15,15 @@
 <style>
   .header {
     padding: 2rem 5rem;
-    background-color: #DFC8FD;
+    background-color: var(--overlay);
     min-height: 5vh;
   }
 
   .hero{
     padding: 2rem 5rem;
-    background: linear-gradient(
-      180deg,
-      #DFC8FD,
-      white
-      );
+    min-height: 90vh;
+    background: linear-gradient(180deg, var(--overlay), transparent),
+                url('/images/overlay.svg') no-repeat center center / cover;
+
   }
 </style>

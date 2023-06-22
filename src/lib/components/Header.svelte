@@ -51,5 +51,6 @@
 
   .menu-item {
     list-style: none;
+    font-size: 1rem;
   }
 </style>
