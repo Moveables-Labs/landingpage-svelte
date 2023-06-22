@@ -1,7 +1,10 @@
 :root {
   --bg-color: #fff;
-  --text-color: #000;
-  --hover-color: #711df9;
+  --text-dark: #000;
+  --text-light: #fff;
+  --text-hover: #711df9;
+  --btn-hover: #711df9;
+  --btn-active: #8d4afa;
 }
 
 @font-face {
@@ -19,10 +22,10 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--text-dark);
 }
 
 a:hover,
 a:active {
-  color: var(--hover-color);
+  color: var(--text-hover);
 }

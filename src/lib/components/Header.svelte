@@ -22,7 +22,6 @@
 <style>
   nav {
     display: flex;
-    padding: 0.5em 5em;
     align-items: center;
     justify-content: space-between;
   }

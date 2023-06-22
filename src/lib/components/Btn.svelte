@@ -6,14 +6,22 @@
   button {
     color: white;
     font-weight: 700;
-    width: 12em;
+    width: 10rem;
     border: none;
     border-radius: 50px;
-    padding: 1em 1.25em;
+    padding: 0.85rem 1.5rem;
     background: linear-gradient(
       180deg,
       rgba(113, 29, 249, 0.9) 0%,
       rgba(113, 29, 249, 0.28) 100%
     );
+  }
+
+  button:hover {
+    background: var(--btn-hover, #711df9);
+  }
+
+  button:active {
+    background: var(--btn-active, #8d4afa);
   }
 </style>
