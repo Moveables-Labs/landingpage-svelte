@@ -14,6 +14,18 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: "Syne";
+  src: url("/fonts/Syne/Syne-VariableFont_wght.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Manrope;
   font-weight: 400;

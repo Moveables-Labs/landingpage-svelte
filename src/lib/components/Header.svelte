@@ -5,8 +5,8 @@
 <nav>
   <a href="/">
     <div class="logo">
-      <img src="/images/logo.png" alt="logo" />
-      <img src="/images/logo-text.png" alt="logo-text" />
+      <img src="/images/logo.svg" alt="logo" />
+      <img src="/images/logo-text.svg" alt="logo-text" />
     </div>
   </a>
   <div class="menu-container">
@@ -18,6 +18,8 @@
     <Btn>Get Started</Btn>
   </div>
 </nav>
+
+
 
 <style>
   nav {

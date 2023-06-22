@@ -15,6 +15,7 @@
       rgba(113, 29, 249, 0.9) 0%,
       rgba(113, 29, 249, 0.28) 100%
     );
+    cursor: pointer;
   }
 
   button:hover {
