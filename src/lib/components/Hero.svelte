@@ -3,64 +3,73 @@
 </script>
 
 <section class="hero">
-    <div class="text-container">
-        <h1>Instant Delivery service at your request</h1>
-        <p>Delivery agents  are ready to carry your goods  to where you  want
-            it to be. <br>Get the utmost satisfaction in every way</p>
-        <div>
-            <Btn>Get Started</Btn>
-            <button>Learn More</button>
-        </div>
+  <div class="text-container">
+    <h1>Instant Delivery service at your request</h1>
+    <p>
+      Delivery agents are ready to carry your goods to where you want it to be. <br
+      />Get the utmost satisfaction in every way
+    </p>
+    <div>
+      <Btn>Get Started</Btn>
+      <button>Learn More</button>
     </div>
+  </div>
 
-    <div class="photo-container">
-        <img src="/images/inter-state.svg" alt="" class="inter">
-        <img src="/images/hero-image1.svg" alt="A man holding a package" class="image1">
-        <img src="/images/hero-image2.svg" alt="A woman holding a package" class="image2">
-        <img src="/images/track-card.svg" alt="" class="track">
-    </div>
+  <div class="photo-container">
+    <img src="/images/inter-state.svg" alt="" class="inter" />
+    <img
+      src="/images/hero-image1.svg"
+      alt="A man holding a package"
+      class="image1"
+    />
+    <img
+      src="/images/hero-image2.svg"
+      alt="A woman holding a package"
+      class="image2"
+    />
+    <img src="/images/track-card.svg" alt="" class="track" />
+  </div>
 </section>
 
 <style>
-.hero{
+  .hero {
     display: flex;
     width: 100%;
     min-height: 40vh;
     justify-content: space-between;
     align-items: center;
     position: relative;
+  }
 
-}
-
-.text-container{
+  .text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 50%;
     flex-shrink: 0;
-}
+  }
 
-.text-container h1{
-    font-size: 70px;
+  .text-container h1 {
+    font-size: 3.5rem;
     font-family: Syne;
     font-weight: 600;
-    line-height: 60px;
+    line-height: 4.25rem;
     margin-bottom: 15px;
     flex: 1 0 0;
-    width: 500px;
-}
+    width: 30rem;
+  }
 
-.text-container p{
-    width: 380px;
+  .text-container p {
+    width: 20rem;
     margin-bottom: 28px;
-}
+  }
 
-.text-container div{
+  .text-container div {
     display: flex;
     gap: 14px;
-}
+  }
 
-button{
+  button {
     color: white;
     font-weight: 700;
     width: 10rem;
@@ -69,51 +78,50 @@ button{
     padding: 0.85rem 1.5rem;
     background: #d8bbfe;
     cursor: pointer;
-}
+  }
 
-button:hover {
+  button:hover {
     background: var(--btn-hover, #711df9);
-}
+  }
 
   button:active {
     background: var(--btn-active, #8d4afa);
-}
+  }
 
-
-.photo-container{
+  .photo-container {
     display: flex;
     position: relative;
     justify-content: center;
     width: 50%;
-}
+  }
 
-.image1{
+  .image1 {
     width: 40%;
     margin-left: 20%;
-}
+  }
 
-.image2{
+  .image2 {
     z-index: 1;
     position: absolute;
     top: -5%;
     right: 0%;
     width: 35%;
-}
+  }
 
-.inter{
+  .inter {
     position: absolute;
     top: -5%;
     left: 32%;
     width: 25%;
-}
+  }
 
-.track{
+  .track {
     z-index: 2;
     width: 25%;
     position: absolute;
     right: -5%;
     bottom: 9%;
     user-select: none;
-}
-
+  }
 </style>
+
