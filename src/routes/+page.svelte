@@ -4,6 +4,8 @@
   import Hero from "$lib/components/Hero.svelte";
   import Services from "$lib/components/Services.svelte";
   import Steps from "$lib/components/Steps.svelte";
+  import Features from "$lib/components/Features.svelte";
+  import Waitlist from "$lib/components/Waitlist.svelte";
 </script>
 
 <section class="header">
@@ -20,6 +22,14 @@
 
 <section class="steps">
   <Steps />
+</section>
+
+<section class="features">
+  <Features />
+</section>
+
+<section class="waitlist">
+  <Waitlist />
 </section>
 
 <style>
@@ -47,6 +57,17 @@
   .steps{
     padding: 2rem 5rem;
     min-height: 100vh;
-    
+  }
+
+  .features{
+    min-height: 100vh;
+    background: var(--background);
+    padding: 2rem 5rem;
+  }
+
+  .waitlist{
+    padding: 2rem 5rem;
+    min-height: 40vh;
+    background: #fff;
   }
 </style>

@@ -15,7 +15,7 @@
                 </div>
                 <div class="card-content">
                     <div class="card-content-title">
-                        <img src="/images/dis-cycle-logo.svg" alt="">
+                        <img src="/icons/dis-cycle-logo.svg" alt="">
                         <h3>2.5k</h3>
                     </div>
     
@@ -29,33 +29,33 @@
     
             <div id="card-2" class="card">
                 <div>
-                    <img src="/images/dis-cycle.svg" alt="">
+                    <img src="/images/bus.svg" alt="">
                 </div>
                 <div class="card-content">
                     <div class="card-content-title">
-                        <img src="/images/dis-cycle-logo.svg" alt="">
-                        <h3>2.5k</h3>
+                        <img src="/icons/truck.svg" alt="">
+                        <h3>1k</h3>
                     </div>
     
                     <div class="card-content-desc">
-                        <h4>Bike Delivery</h4>
+                        <h4>Truck Delivery</h4>
                         <p>Sign up today to get access to our services as we connect you to your needs.</p>
                     </div>
                 </div>
             </div>
     
             <div id="card-3" class="card">
-                <div>
-                    <img src="/images/dis-cycle.svg" alt="">
+                <div class="irr">
+                    <img src="/images/bicycle.svg" alt="">
                 </div>
                 <div class="card-content">
                     <div class="card-content-title">
-                        <img src="/images/dis-cycle-logo.svg" alt="">
-                        <h3>2.5k</h3>
+                        <img src="/icons/person.svg" alt="">
+                        <h3>200+</h3>
                     </div>
     
                     <div class="card-content-desc">
-                        <h4>Bike Delivery</h4>
+                        <h4>Door to Door Delivery</h4>
                         <p>Sign up today to get access to our services as we connect you to your needs.</p>
                     </div>
                 </div>
@@ -92,8 +92,8 @@ section{
     display: grid;
     grid-auto-flow: column;
     scroll-behavior: auto;
-    gap: 10rem;
-    overflow-y: scroll;
+    gap: 4rem;
+    overflow-y: hidden;
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
@@ -118,6 +118,11 @@ section{
     height: 22rem;
     margin-left: -2%;
     justify-content: flex-start;
+}
+
+.irr img{
+    height: 22.5rem;
+    margin-top: -2%;
 }
 
 .card-content{

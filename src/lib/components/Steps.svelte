@@ -117,11 +117,6 @@ section{
     left: -7%;
 }
 
-.float p{
-    color: white;
-    font-size: 1rem;
-}
-
 .line{
     display: flex;
     align-items: center;
@@ -135,8 +130,8 @@ section{
 }
 
 .image img{
-    width: 880px;
-    height: 480px;
+    width: 100%;
+    min-height: 55vh;
     box-shadow: 11px 5px 30px -5px rgba(0, 0, 0, 0.25);
     margin-top: 0.3rem;
 }
