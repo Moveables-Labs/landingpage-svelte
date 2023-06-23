@@ -47,12 +47,13 @@
     line-height: 60px;
     margin-bottom: 15px;
     flex: 1 0 0;
-    width: 500px;
+    width: 520px;
 }
 
 .text-container p{
-    width: 380px;
+    width: 70%;
     margin-bottom: 28px;
+    font-size: 1.2em;
 }
 
 .text-container div{
