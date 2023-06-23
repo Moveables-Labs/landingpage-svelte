@@ -20,6 +20,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/syne": "^5.0.3"
+		"@fontsource/syne": "^5.0.3",
+		"swiper": "^9.4.1"
 	}
 }

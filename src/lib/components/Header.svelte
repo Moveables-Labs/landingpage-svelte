@@ -21,7 +21,7 @@
           on:click={dropdown.toggle}
           on:keydown={dropdown.toggle}
         >
-          <p>socials</p>
+          <p>Socials</p>
           <span><img src="/icons/ChevronDown.svg" alt="chevron-down" /></span>
         </div>
         <Dropdown bind:this={dropdown}>

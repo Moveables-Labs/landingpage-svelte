@@ -97,7 +97,6 @@
 
   .image1 {
     width: 40%;
-    margin-left: 20%;
   }
 
   .image2 {
@@ -105,13 +104,13 @@
     position: absolute;
     top: -5%;
     right: 0%;
-    width: 35%;
+    width: 39%;
   }
 
   .inter {
     position: absolute;
     top: -5%;
-    left: 32%;
+    left: 23%;
     width: 25%;
   }
 
@@ -120,7 +119,7 @@
     width: 25%;
     position: absolute;
     right: -5%;
-    bottom: 9%;
+    bottom: 1%;
     user-select: none;
   }
 </style>
