@@ -1,5 +1,8 @@
-<script>
+<script lang="ts">
   import Btn from "./Btn.svelte";
+  import Dropdown from "./dropdown/Dropdown.svelte";
+
+  let dropdown: Dropdown;
 </script>
 
 <nav>
@@ -12,14 +15,26 @@
   <div class="menu-container">
     <ul class="nav-menu">
       <li class="menu-item"><a href="/" class="menu-link">Home</a></li>
-      <li class="menu-item"><a href="/" class="menu-link">Socials</a></li>
+      <li class="menu-item">
+        <div
+          class="dropdown-label"
+          on:click={dropdown.toggle}
+          on:keydown={dropdown.toggle}
+        >
+          <p>socials</p>
+          <span><img src="/icons/ChevronDown.svg" alt="chevron-down" /></span>
+        </div>
+        <Dropdown bind:this={dropdown}>
+          <li>hello</li>
+          <li>hello</li>
+          <li>hello</li>
+        </Dropdown>
+      </li>
       <li class="menu-item"><a href="/" class="menu-link">About Us</a></li>
     </ul>
     <Btn>Get Started</Btn>
   </div>
 </nav>
-
-
 
 <style>
   nav {
@@ -52,5 +67,21 @@
   .menu-item {
     list-style: none;
     font-size: 1rem;
+  }
+
+  .dropdown-label {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dropdown-label span {
+    line-height: 0;
+  }
+
+  .dropdown-label:active,
+  .dropdown-label:hover {
+    color: var(--text-hover);
   }
 </style>
