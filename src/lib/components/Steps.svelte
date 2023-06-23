@@ -127,7 +127,7 @@ section{
     align-items: center;
     justify-content: center;
     width: 1px;
-    height: 6rem;
+    height: 3rem;
     border-width: 0.08rem;
     border-style: solid;
     border-color: #8D4AFA;
@@ -136,7 +136,7 @@ section{
 
 .image img{
     width: 880px;
-    height: 580px;
+    height: 480px;
     box-shadow: 11px 5px 30px -5px rgba(0, 0, 0, 0.25);
     margin-top: 0.3rem;
 }
