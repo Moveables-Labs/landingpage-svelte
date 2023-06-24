@@ -5,7 +5,8 @@
 <style>
   button {
     color: white;
-    font-weight: 700;
+    font-weight: normal;
+    letter-spacing: 1px;
     width: 10rem;
     border: none;
     border-radius: 50px;

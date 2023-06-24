@@ -14,7 +14,7 @@
                 <img class="left-card-img" src="/images/geotracking.svg" alt="Card image cap">
                 <div class="left-card-body">
                   <div class="left-card-text">
-                        <h3>GPS TRACKING & GEO LOCATION</h3>
+                        <h3 class="titles">GPS TRACKING & GEO LOCATION</h3>
                         <p>Never lose track of orders as real time locations of your delivery is broadcast live on your device. You can also navigate live locations to reach clients/customers in new places.</p>
                     </div>
                 </div>
@@ -24,7 +24,7 @@
                 <img class="left-card-img" src="/images/time.svg" alt="Card image cap">
                 <div class="left-card-body">
                   <div class="left-card-text">
-                        <h3>TIMELY</h3>
+                        <h3 class="titles">TIMELY</h3>
                         <p>Receive your orders exactly at stipulated times with no avoidable delays.</p>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                 <img class="right-top-card-img" src="/images/communication.svg" alt="Card image cap">
                 <div class="right-card-body">
                   <div class="right-card-text">
-                        <h3>QUICK COMMUNICATION</h3>
+                        <h3 class="titles">QUICK COMMUNICATION</h3>
                         <p>Quick and easy in-app communication between drivers and clients.</p>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
                 <img class="right-bottom-card-img" src="/images/thumbs.svg" alt="Card image cap">
                 <div class="right-card-body">
                   <div class="right-card-text">
-                        <h3>RELIABLE</h3>
+                        <h3 class="titles">RELIABLE</h3>
                         <p>Guaranteed assurance that deliveries make it to destinations without any mishaps.</p>
                     </div>
                 </div>
@@ -79,6 +79,12 @@ section{
     font-weight: 500;
     padding-top: 1rem;
     font-size: 30px;
+}
+
+.titles{
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-family: Syne;
 }
 
 .container{

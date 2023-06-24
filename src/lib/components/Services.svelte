@@ -81,6 +81,7 @@ section{
     text-align: center;
     font-family: Syne;
     padding-top: 3rem;
+    letter-spacing: 2px;
 }
 
 .carousel{
@@ -161,6 +162,8 @@ section{
     margin-top: 20px;
     font-size: 30px;
     font-family: Syne;
+    letter-spacing: 0.15rem;
+    font-weight: 500;
 }
 
 .card-content-desc p{

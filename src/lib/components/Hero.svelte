@@ -56,12 +56,14 @@
     line-height: 4.25rem;
     margin-bottom: 15px;
     flex: 1 0 0;
-    width: 30rem;
+    width: 38rem;
+    letter-spacing: 2px;
   }
 
   .text-container p {
-    width: 20rem;
+    width: 38rem;
     margin-bottom: 28px;
+    font-size: 1.4rem;
   }
 
   .text-container div {
@@ -71,13 +73,14 @@
 
   button {
     color: white;
-    font-weight: 700;
+    font-weight: normal;
     width: 10rem;
     border: none;
     border-radius: 50px;
     padding: 0.85rem 1.5rem;
     background: #d8bbfe;
     cursor: pointer;
+    letter-spacing: 1px;
   }
 
   button:hover {

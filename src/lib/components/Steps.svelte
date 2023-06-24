@@ -141,7 +141,8 @@ section{
 }
 button {
     color: white;
-    font-weight: 600;
+    font-weight: normal;
+    letter-spacing: 1px;
     font-family: Manrope;
     width: 16rem;
     border: none;

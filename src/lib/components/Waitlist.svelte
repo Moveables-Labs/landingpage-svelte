@@ -41,6 +41,7 @@ section{
     color: white;
     padding-bottom: 2rem;
     border-radius: 14px;
+    font-family: Manrope;
 }
 
 .launch{
@@ -84,6 +85,7 @@ section{
     justify-content: center;
     align-items: start;
     padding-left: 2rem;
+    gap: 0.5rem;
 }
 
 .line{
@@ -141,7 +143,8 @@ button.left-btn{
     box-shadow: -2px 2px 10px 0px rgba(0, 0, 0, 0.25);
     color: #fff;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: normal;
+    letter-spacing: 1px;
     line-height: 1.25rem;
 }
 
@@ -164,7 +167,7 @@ button{
     border: none;
     background: #fff;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 1.25rem;
 }
 

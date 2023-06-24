@@ -25,9 +25,6 @@
           <span><img src="/icons/ChevronDown.svg" alt="chevron-down" /></span>
         </div>
         <Dropdown bind:this={dropdown}>
-          <li>hello</li>
-          <li>hello</li>
-          <li>hello</li>
         </Dropdown>
       </li>
       <li class="menu-item"><a href="/" class="menu-link">About Us</a></li>
@@ -46,7 +43,7 @@
   .logo {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
   }
 
   .menu-container,
@@ -80,8 +77,5 @@
     line-height: 0;
   }
 
-  .dropdown-label:active,
-  .dropdown-label:hover {
-    color: var(--text-hover);
-  }
+
 </style>

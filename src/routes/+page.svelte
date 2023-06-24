@@ -6,6 +6,8 @@
   import Steps from "$lib/components/Steps.svelte";
   import Features from "$lib/components/Features.svelte";
   import Waitlist from "$lib/components/Waitlist.svelte";
+  import Blog from "$lib/components/Blog.svelte";
+  import Footer from "$lib/components/Footer.svelte";
 </script>
 
 <section class="header">
@@ -30,6 +32,14 @@
 
 <section class="waitlist">
   <Waitlist />
+</section>
+
+<section class="blog">
+  <Blog />
+</section>
+
+<section class="footer">
+  <Footer />
 </section>
 
 <style>
@@ -69,5 +79,16 @@
     padding: 2rem 5rem;
     min-height: 40vh;
     background: #fff;
+  }
+
+  .blog{
+    min-height: 60vh;
+    background: var(--background);
+    padding: 2rem 5rem;
+  }
+
+  .footer{
+    min-height: 50vh;
+    padding: 2rem 5rem;
   }
 </style>
