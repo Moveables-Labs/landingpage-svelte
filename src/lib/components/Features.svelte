@@ -19,8 +19,26 @@
                     </div>
                 </div>
             </div>
+            <div class="left-card left-card-mob">
+                <img class="left-card-img" src="/images/geotracking.svg" alt="Card image cap">
+                <div class="left-card-body">
+                  <div class="left-card-text">
+                        <h3 class="titles">GPS TRACKING & GEO LOCATION</h3>
+                        <p>Never lose track of orders as real time locations of your delivery is broadcast live on your device. You can also navigate live locations..</p>
+                    </div>
+                </div>
+            </div>
 
             <div class="left-card">
+                <img class="left-card-img" src="/images/time.svg" alt="Card image cap">
+                <div class="left-card-body">
+                  <div class="left-card-text">
+                        <h3 class="titles">TIMELY</h3>
+                        <p>Receive your orders exactly at stipulated times with no avoidable delays.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="left-card left-card-mob">
                 <img class="left-card-img" src="/images/time.svg" alt="Card image cap">
                 <div class="left-card-body">
                   <div class="left-card-text">
@@ -67,7 +85,7 @@ section{
 }
 
 .heading h3{
-    font-size: 50px;
+    font-size: 3.5rem;
     text-align: center;
     font-family: Syne;
     padding-top: 3rem;
@@ -78,7 +96,7 @@ section{
     font-family: Syne;
     font-weight: 500;
     padding-top: 1rem;
-    font-size: 30px;
+    font-size: 1.65rem;
 }
 
 .titles{
@@ -112,6 +130,10 @@ section{
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
+}
+
+.left-card-mob{
+  display: none;
 }
 
 .left-card-img {
@@ -186,5 +208,80 @@ section{
   font-size: 1rem;
   line-height: 1.5;
   color: #333;
+}
+
+@media (min-width: 320px) and (max-width: 670px){
+
+  .left-card-text, .right-card-text{
+    line-height: 0.8rem !important;
+    letter-spacing: normal !important;
+  }
+  .left-card-text{
+    font-size: 0.7rem;
+  }
+
+  .right-card-text{
+    font-size: 0.7rem;
+  }
+
+  .left-card{
+    display: none;
+    
+  }
+
+  .left-card-mob{
+    display: block;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+  }
+
+  .left-card-body{
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+  }
+
+  .left-cards{
+    gap: 1rem;
+  }
+
+  .left-card-img {
+  width: 100%;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  }
+
+  .right-top-card-img{
+    width: 100%;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+  }
+
+  .right-bottom-card-img{
+    width: 100%;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+  }
+  .right-card-body{
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+  }
+
+  .right-bottom-card{
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+  }
+
+  .right-top-card{
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+  }
+
+  .titles{
+    margin-bottom: 2px;
+  }
+
+  .heading h3{
+    font-size: 3rem;
+  }
 }
 </style>

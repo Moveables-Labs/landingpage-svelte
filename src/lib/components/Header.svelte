@@ -77,5 +77,9 @@
     line-height: 0;
   }
 
-
+@media (min-width: 320px) and (max-width: 727px){
+  .menu-container{
+    display: none;
+  }
+}
 </style>

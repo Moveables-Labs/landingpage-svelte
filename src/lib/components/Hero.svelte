@@ -63,7 +63,8 @@
   .text-container p {
     width: 38rem;
     margin-bottom: 28px;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+    line-height: 2rem;
   }
 
   .text-container div {
@@ -125,5 +126,82 @@
     bottom: 1%;
     user-select: none;
   }
+
+
+  @media (min-width: 320px) and (max-width: 670px){
+    .hero{
+      flex-direction: column;
+    }
+
+    .text-container{
+      width: 100%;
+      padding-bottom: 2rem;
+    }
+
+    .text-container h1{
+      width: 100%;
+      font-size: 3rem;
+      line-height: 3.25rem;
+
+    }
+
+    .text-container p{
+      width: 100%;
+      margin-bottom: 12px;
+    }
+
+    .text-container div{
+      width: 100%;
+      gap: 2rem;
+    }
+
+    button{
+      width: 50%;
+      padding: 0.94rem 1.25rem;
+    }
+
+    .photo-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0.7rem;
+  }
+
+  .image1 {
+    width: 50%;
+    position: relative;
+    z-index: 0;
+    left: -20%;
+  }
+
+  .image2 {
+    z-index: 1;
+    position: absolute;
+    top: -10%;
+    right: 8%;
+    width: 48%;
+  }
+
+  .inter {
+    position: absolute;
+    top: -8%;
+    left: 0%;
+    width: 35%;
+    z-index: 2;
+  }
+
+  .track {
+    z-index: 2;
+    width: 35%;
+    position: absolute;
+    right: 0;
+    bottom: 1%;
+    user-select: none;
+  }
+
+
+}
 </style>
 

@@ -21,7 +21,7 @@
         <div class="line"></div>
 
         <div class="right-content">
-            <p>Join waitlist for to access your go to delivery service</p>
+            <p>Join our delivery agent waitlist</p>
             <button>Independent Dispatcher</button>
             <p class="center">Or</p>
             <button>Company Dispatcher</button>
@@ -55,7 +55,7 @@ section{
 }
 
 .heading h3{
-    font-size: 50px;
+    font-size: 3rem;
     text-align: center;
     font-family: Syne;
     padding-top: 3rem;
@@ -66,7 +66,7 @@ section{
     font-family: Syne;
     font-weight: 500;
     padding-top: 1rem;
-    font-size: 20px;
+    font-size: 1.4rem;
 }
 
 .content{
@@ -109,7 +109,7 @@ section{
 }
 
 .left-content, .right-content p{
-    font-size: 17px;
+    font-size: 1rem;
 }
 
 .email{
@@ -118,8 +118,7 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 39px 25px;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     border-radius: 4px;
     margin-top: 5%;
 }
@@ -154,7 +153,6 @@ button.left-btn{
     justify-content: center;
     margin: auto;
     padding-top: 1rem;
-    padding-right: 2.9rem;
     font-size: 1.2rem;
 }
 
@@ -183,6 +181,72 @@ button:active{
     color: white;
     cursor: pointer;
 }
+
+
+@media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .line {
+      width: 85%;
+      height: 1px;
+      margin: 1.5rem 0;
+    }
+
+    .left-content,
+    .right-content {
+      width: 100%;
+      margin: auto;
+      text-align: center;
+    }
+
+    button, .email{
+        border-radius: 10px !important;
+    }
+
+    .left-content, .right-content p{
+    font-size: 1rem;
+    text-align: start;
+    }
+
+    .right-content p{
+        padding-bottom: 1rem;
+    }
+
+    .left-content p{
+        padding-right: 1rem;
+    }
+
+    .heading h3{
+        margin: auto;
+        font-size: 2.5rem;
+    }
+
+    .heading p{
+        font-weight: normal;
+        font-size: 1rem;
+        text-align: center;
+        padding: 2px 5px;
+    }
+
+    .launch{
+        font-size: 1.2rem;
+    }
+
+    .content{
+        padding-bottom: 1rem;
+    }
+
+    .center{
+    display: flex;
+    margin: 0px 8.3rem;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+}
+
 
 
 </style>

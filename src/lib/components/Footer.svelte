@@ -25,7 +25,7 @@ let date = new Date().getFullYear();
 
         </div>
         <div class="footer-column sec-col"></div>
-        <div class="footer-column col">
+        <div class="footer-column col about">
             <h4>About Us</h4>
             <ul>
                 <a href="#"><li>About Us</li></a>
@@ -68,7 +68,6 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* border-top: 1px solid #000000; */
     padding: 5rem 0rem;
     width: 100%;
     font-family: Manrope;
@@ -138,7 +137,7 @@ footer{
 }
 
 .contact img{
-    width: 20px;
+    width: 1.4rem;
     padding-bottom: 14px;
 }
 
@@ -157,5 +156,63 @@ footer{
     font-weight: 600;
     font-family: Manrope;
 }
+
+  /* Media Queries */
+  @media (max-width: 768px) {
+
+    footer{
+        padding: 1.5rem 0;
+    }
+    .footer-row {
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: start;
+    }
+
+    .sec-col{
+        display: none;
+    }
+
+    .footer-column {
+      max-width: 20%;
+      margin-bottom: 0;
+    }
+
+    .contact{
+        margin-left: 7rem;
+    }
+
+    .text {
+      max-width: 100%;
+    }
+
+    .text p{
+        padding: 1rem 0;
+    }
+
+    .socials {
+      justify-content: center;
+    }
+
+    h4{
+        letter-spacing: normal;
+        align-self: flex-start;
+        font-size: 0.8rem;
+    }
+
+    .col {
+      align-items: center;
+      text-align: start;
+      padding-top: 0;
+    }
+
+    .col ul li{
+    padding-bottom: 1rem;
+    }
+
+    .col ul{
+        margin-top: -0.1rem;
+    }
+  }
  
 </style>

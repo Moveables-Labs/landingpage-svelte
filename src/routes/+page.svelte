@@ -51,7 +51,7 @@
 
   .hero{
     padding: 2rem 5rem;
-    min-height: 90vh;
+    height: 80vh;
     background: linear-gradient(180deg, var(--overlay), transparent),
                 url('/images/overlay.svg') no-repeat center center / cover;
   }
@@ -91,4 +91,45 @@
     min-height: 50vh;
     padding: 2rem 5rem;
   }
+
+  @media (min-width: 320px) and (max-width: 359px){
+    section{
+      padding: 1rem !important;
+    }
+    .hero{
+      min-height: 112vh;
+    }
+  }
+
+  @media (min-width: 360px) and (max-width:390px){
+    section{
+      padding: 1rem !important;
+    }
+    .hero{
+      height: 100vh;
+    }
+  }
+
+
+  @media (min-width: 390px) and (max-width: 768px){
+    section{
+      padding: 1rem !important;
+    }
+
+    .hero{
+      min-height: 95vh;
+    }
+
+    .service{
+      min-height: 80vh;
+    }
+
+    .blog{
+      display: none;
+    }
+  }
+
+
+
+
 </style>

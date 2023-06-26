@@ -26,4 +26,11 @@
   button:active {
     background: var(--btn-active, #8d4afa);
   }
+
+  @media (min-width: 320px) and (max-width: 727px){
+   button{
+      width: 50%;
+      padding: 0.94rem 1.25rem;
+   }
+  }
 </style>

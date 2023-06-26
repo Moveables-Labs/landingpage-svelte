@@ -42,7 +42,6 @@ section{
     justify-content: center;
     align-items: center;
     padding-bottom: 2rem;
-    border-radius: 14px;
 }
 .heading{
     display: flex;
@@ -51,7 +50,7 @@ section{
     width: 100%;
 }
 .heading h3{
-    font-size: 50px;
+    font-size: 2.7rem;
     text-align: start;
     font-family: Syne;
     font-weight: 600;
@@ -105,7 +104,7 @@ section{
 }
 
 .content p{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: white;
     font-weight: bold;
     line-height: 1.7rem;
@@ -118,5 +117,12 @@ a{
     font-size: 1rem;
     font-weight: bold;
     color: var(--text-hover);
+}
+
+@media (min-width: 320px) and (max-width: 727px){
+    .container {
+    grid-template-columns: 1fr; /* Set to a single column */
+    grid-template-rows: 0fr;
+    }
 }
 </style>

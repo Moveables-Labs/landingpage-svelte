@@ -14,7 +14,7 @@ import Btn from "./Btn.svelte";
                 <div class="float">
                     1
                 </div>
-                <p>Download the <br> <span>Moveables</span> app.</p>
+                <p>Download the <span>Moveables</span> app.</p>
             </div>
             <div class="line"></div>
             <div class="steps">
@@ -37,6 +37,9 @@ import Btn from "./Btn.svelte";
         <div class="image">
             <img src="/images/couriers.svg" alt="">
         </div>
+        <div class="image-mob">
+            <img src="/images/couriers.svg" alt="">
+        </div>
     </div>
 </section>
 
@@ -52,7 +55,7 @@ section{
 }
 
 .heading h3{
-    font-size: 50px;
+    font-size: 2.8rem;
     text-align: center;
     font-family: Syne;
     padding-top: 3rem;
@@ -61,9 +64,9 @@ section{
 .heading p{
     text-align: center;
     font-family: Syne;
-    font-weight: 600;
+    font-weight: 500;
     padding-top: 1rem;
-    font-size: 30px;
+    font-size: 1.3rem;
 }
 
 .container{
@@ -82,7 +85,7 @@ section{
 }
 
 .steps{
-    font-size: 1.2rem;
+    font-size: 1.18rem;
     font-family: Manrope;
     font-weight: 400;
     border: 3px solid var(--purple);
@@ -136,6 +139,10 @@ section{
     margin-top: 0.3rem;
 }
 
+.image-mob img{
+    display: none;
+}
+
 .space {
     margin-bottom: 2rem;
 }
@@ -163,4 +170,27 @@ button {
   button:active {
     background: var(--btn-active, #8d4afa);
   }
+
+
+  @media (min-width: 320px) and (max-width: 768px){
+    .container {
+    flex-direction: column;
+    gap: 2rem;
+    }
+
+    .left-container{
+        width: 100%;
+    }
+
+    .image img{
+        display: none;
+    }
+
+    .image-mob img{
+        display: block;
+        width: 100%;
+        box-shadow: 11px 5px 30px -5px rgba(0, 0, 0, 0.25);
+    }
+  }
+
 </style>
