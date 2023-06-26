@@ -92,32 +92,16 @@
     padding: 2rem 5rem;
   }
 
-  @media (min-width: 320px) and (max-width: 359px){
-    section{
-      padding: 1rem !important;
-    }
-    .hero{
-      min-height: 112vh;
-    }
-  }
-
-  @media (min-width: 360px) and (max-width:390px){
-    section{
-      padding: 1rem !important;
-    }
-    .hero{
-      height: 100vh;
-    }
-  }
+  
 
 
-  @media (min-width: 390px) and (max-width: 768px){
+  @media (max-width: 768px){
     section{
       padding: 1rem !important;
     }
 
     .hero{
-      min-height: 95vh;
+      min-height: 108vh;
     }
 
     .service{

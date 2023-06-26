@@ -174,7 +174,7 @@ footer{
     }
 
     .footer-column {
-      max-width: 20%;
+      max-width: 18%;
       margin-bottom: 0;
     }
 

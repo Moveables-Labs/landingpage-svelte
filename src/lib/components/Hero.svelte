@@ -128,7 +128,7 @@
   }
 
 
-  @media (min-width: 320px) and (max-width: 670px){
+  @media (max-width: 728px){
     .hero{
       flex-direction: column;
     }
@@ -166,7 +166,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 0.7rem;
+    margin-top: 1rem;
   }
 
   .image1 {
