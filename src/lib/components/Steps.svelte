@@ -172,7 +172,7 @@ button {
   }
 
 
-  @media (min-width: 320px) and (max-width: 768px){
+  @media (min-width: 320px) and (max-width: 1110px){
     .container {
     flex-direction: column;
     gap: 2rem;
