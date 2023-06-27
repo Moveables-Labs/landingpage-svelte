@@ -92,20 +92,27 @@
     padding: 2rem 5rem;
   }
 
-  
+  @media (max-width: 376px){
+    .hero{
+      height: 100% !important;
+    }
+    .service{
+      height: 100%;
+    }
+  }
 
 
-  @media (max-width: 768px){
+  @media (max-width: 1110px){
     section{
       padding: 1rem !important;
     }
 
     .hero{
-      min-height: 108vh;
+      height: 100%;
     }
 
     .service{
-      min-height: 80vh;
+      height: 100%;
     }
 
     .blog{

@@ -1,6 +1,7 @@
 <script lang="ts">
   import Btn from "./Btn.svelte";
   import Dropdown from "./dropdown/Dropdown.svelte";
+  import Mobile from "./dropdown/Mobile.svelte";
 
   let dropdown: Dropdown;
 </script>
@@ -31,6 +32,11 @@
     </ul>
     <Btn>Get Started</Btn>
   </div>
+
+  <div class="burger-menu">
+      <img src="/icons/burger.svg" alt="" class="burger">
+      <!-- <Mobile /> -->
+  </div>
 </nav>
 
 <style>
@@ -51,6 +57,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .burger-menu{
+    display: none;
   }
 
   .menu-container {
@@ -76,10 +86,15 @@
   .dropdown-label span {
     line-height: 0;
   }
+  
 
-@media (min-width: 320px) and (max-width: 727px){
+@media (max-width: 1110px){
   .menu-container{
     display: none;
+  }
+
+  .burger-menu{
+    display: block;;
   }
 }
 </style>

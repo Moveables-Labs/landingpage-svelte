@@ -151,9 +151,11 @@ button.left-btn{
     display: flex;
     text-align: center;
     justify-content: center;
-    margin: auto;
+    align-items: center;
+    margin:auto;
     padding-top: 1rem;
     font-size: 1.2rem;
+    padding-right: 3rem;
 }
 
 button{
@@ -183,7 +185,7 @@ button:active{
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .content {
       flex-direction: column;
       align-items: center;
@@ -240,11 +242,10 @@ button:active{
     }
 
     .center{
-    display: flex;
-    margin: 0px 8.3rem;
-    padding-top: 1rem;
-    font-size: 1.2rem;
-}
+        text-align: start;
+        padding-right: 3rem;
+        margin-top: 1rem;
+    }
 }
 
 

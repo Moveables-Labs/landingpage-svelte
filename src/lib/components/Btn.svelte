@@ -33,4 +33,10 @@
       padding: 0.94rem 1.25rem;
    }
   }
+
+   @media (min-width: 630px) and (max-width: 1110px) {
+    button{
+      width: 50%;
+    }
+  }
 </style>

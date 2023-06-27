@@ -6,8 +6,7 @@
   <div class="text-container">
     <h1>Instant Delivery service at your request</h1>
     <p>
-      Delivery agents are ready to carry your goods to where you want it to be. <br
-      />Get the utmost satisfaction in every way
+      Delivery agents are ready to carry your goods to where you want it to be. Get the utmost satisfaction in every way
     </p>
     <div>
       <Btn>Get Started</Btn>
@@ -128,7 +127,8 @@
   }
 
 
-  @media (max-width: 728px){
+
+  @media (max-width: 767px){
     .hero{
       flex-direction: column;
     }
@@ -170,24 +170,24 @@
   }
 
   .image1 {
-    width: 50%;
+    max-width: 50%;
     position: relative;
     z-index: 0;
-    left: -20%;
+    left: -15%;
   }
 
   .image2 {
     z-index: 1;
     position: absolute;
     top: -10%;
-    right: 8%;
-    width: 48%;
+    right: 14%;
+    max-width: 50%;
   }
 
   .inter {
     position: absolute;
-    top: -8%;
-    left: 0%;
+    top: -10%;
+    left: -1%;
     width: 35%;
     z-index: 2;
   }
@@ -201,6 +201,71 @@
     user-select: none;
   }
 
+}
+
+@media (min-width: 630px) and (max-width: 1110px) {
+  .hero{
+    flex-direction: column;
+  }
+
+  .photo-container{
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  .text-container{
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .text-container h1{
+    width: 90%;
+  }
+
+  button {
+    color: white;
+    font-weight: normal;
+    width: 50%;
+    border: none;
+    border-radius: 50px;
+    padding: 1.2rem 1.5rem;
+    background: #d8bbfe;
+    cursor: pointer;
+    letter-spacing: 1px;
+  }
+
+  
+  .image1 {
+    max-width: 30%;
+    position: relative;
+    z-index: 0;
+    left: -10%;
+  }
+
+  .image2 {
+    z-index: 1;
+    position: absolute;
+    top: -10%;
+    right: 19%;
+    max-width: 30%;
+  }
+
+  .inter {
+    position: absolute;
+    top: -10%;
+    left: 20%;
+    width: 20%;
+    z-index: 2;
+  }
+
+  .track {
+    z-index: 2;
+    width: 20%;
+    position: absolute;
+    right: 10%;
+    bottom: 1%;
+    user-select: none;
+  }
 
 }
 </style>

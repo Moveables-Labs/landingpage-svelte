@@ -59,4 +59,11 @@
   color: var(--text-hover);
   }
 
+
+@media (max-width: 768px){
+  ul{
+    position: relative;
+  }
+
+}
 </style>

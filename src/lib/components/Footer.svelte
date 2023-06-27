@@ -40,7 +40,7 @@ let date = new Date().getFullYear();
                 <a href="#"><li>Blog Post</li></a>
             </ul>
         </div>
-        <div class="footer-column col">
+        <div class="footer-column col last">
             <h4>Contact Us</h4>
             <ul>
                 <a class="contact" href="#">
@@ -158,61 +158,33 @@ footer{
 }
 
   /* Media Queries */
-  @media (max-width: 768px) {
 
-    footer{
-        padding: 1.5rem 0;
-    }
-    .footer-row {
-      flex-direction: column;
-      align-items: flex-start;
-      text-align: start;
+@media (max-width: 768px){
+
+    .footer-row{
+        gap: 0.5rem;
     }
 
     .sec-col{
         display: none;
     }
 
-    .footer-column {
-      max-width: 18%;
-      margin-bottom: 0;
+    .footer-column{
+        flex: 1 1 90%;
+        max-width: 90%;
+        gap: 0.8rem;
     }
 
-    .contact{
-        margin-left: 7rem;
+    .text{
+        max-width: 100%;
     }
 
-    .text {
-      max-width: 100%;
+    .col{
+        flex-direction: column;
     }
 
-    .text p{
-        padding: 1rem 0;
+    .last li{
+        padding-left: 0.5rem;
     }
-
-    .socials {
-      justify-content: center;
-    }
-
-    h4{
-        letter-spacing: normal;
-        align-self: flex-start;
-        font-size: 0.8rem;
-    }
-
-    .col {
-      align-items: center;
-      text-align: start;
-      padding-top: 0;
-    }
-
-    .col ul li{
-    padding-bottom: 1rem;
-    }
-
-    .col ul{
-        margin-top: -0.1rem;
-    }
-  }
- 
+}
 </style>
