@@ -25,8 +25,7 @@
           <p>Socials</p>
           <span><img src="/icons/ChevronDown.svg" alt="chevron-down" /></span>
         </div>
-        <Dropdown bind:this={dropdown}>
-        </Dropdown>
+        <Dropdown bind:this={dropdown} />
       </li>
       <li class="menu-item"><a href="/" class="menu-link">About Us</a></li>
     </ul>
@@ -34,8 +33,8 @@
   </div>
 
   <div class="burger-menu">
-      <img src="/icons/burger.svg" alt="" class="burger">
-      <!-- <Mobile /> -->
+    <!-- <img src="/icons/burger.svg" alt="" class="burger"> -->
+    <Mobile />
   </div>
 </nav>
 
@@ -59,7 +58,7 @@
     align-items: center;
   }
 
-  .burger-menu{
+  .burger-menu {
     display: none;
   }
 
@@ -86,15 +85,14 @@
   .dropdown-label span {
     line-height: 0;
   }
-  
 
-@media (max-width: 1110px){
-  .menu-container{
-    display: none;
-  }
+  @media (max-width: 1110px) {
+    .menu-container {
+      display: none;
+    }
 
-  .burger-menu{
-    display: block;;
+    .burger-menu {
+      display: block;
+    }
   }
-}
 </style>
