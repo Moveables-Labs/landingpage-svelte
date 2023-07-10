@@ -140,14 +140,16 @@
 
     .text-container h1{
       width: 100%;
-      font-size: 3rem;
-      line-height: 3.25rem;
+      font-size: 2.5rem;
+      line-height: normal;
 
     }
 
     .text-container p{
       width: 100%;
-      margin-bottom: 12px;
+      margin-bottom: 20px;
+      line-height: normal;
+      font-size: 0.85rem;
     }
 
     .text-container div{

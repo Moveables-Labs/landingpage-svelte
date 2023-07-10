@@ -265,7 +265,7 @@ section{
 
 @media (min-width: 320px) and (max-width: 670px){
     .heading{
-        font-size: 2rem;
+        font-size: 1.4rem;
         max-width: 100%;
         padding-top: 1rem;
     }
@@ -296,6 +296,7 @@ section{
 
     .card-content-desc p{
         margin-left: 0.4rem;
+        font-size: 0.85rem
     }
 
     .irr img{

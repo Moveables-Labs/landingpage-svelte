@@ -121,6 +121,7 @@ section{
     margin-bottom: 7px;
     border-radius: 4px;
     margin-top: 5%;
+    border: none;
 }
 
 input{
@@ -223,28 +224,46 @@ button:active{
 
     .heading h3{
         margin: auto;
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 
     .heading p{
         font-weight: normal;
-        font-size: 1rem;
+        font-size: 0.8rem;
         text-align: center;
         padding: 2px 5px;
+        margin-top: 8px;
     }
 
     .launch{
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
 
     .content{
         padding-bottom: 1rem;
     }
 
+    .content p{
+        font-size: 0.87rem;
+    }
+
     .center{
         text-align: start;
         padding-right: 3rem;
         margin-top: 1rem;
+    }
+    
+    button{
+        width: 90%;
+        margin-top: 3%;
+        padding: 0.8rem 0.9rem;
+        border-radius: 4px;
+        outline: none;
+        border: none;
+        background: #fff;
+        font-size: 0.8rem;
+        font-weight: 600;
+        line-height: 1.25rem;
     }
 }
 

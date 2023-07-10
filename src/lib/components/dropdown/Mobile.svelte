@@ -74,10 +74,11 @@
 
   .burger-icon img,
   .dropdown-label img {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     margin-top: 1rem;
     margin-right: 1rem;
+    cursor: pointer;
   }
 
   .nav-menu {

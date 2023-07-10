@@ -11,14 +11,14 @@ import Btn from "./Btn.svelte";
     <div class="container">
         <div class="left-container">
             <div class="steps">
-                <div class="float">
+                <div class="float float-mol">
                     1
                 </div>
                 <p>Download the <span>Moveables</span> app.</p>
             </div>
             <div class="line"></div>
             <div class="steps">
-                <div class="float">
+                <div class="float float-mol">
                     2
                 </div>
                 <p>Get a delivery agent near you.</p>
@@ -133,8 +133,8 @@ section{
 }
 
 .image img{
-    width: 100%;
-    min-height: 55vh;
+    width: 50vw;
+    min-height: 70vh;
     box-shadow: 11px 5px 30px -5px rgba(0, 0, 0, 0.25);
     margin-top: 0.3rem;
 }
@@ -171,6 +171,11 @@ button {
     background: var(--btn-active, #8d4afa);
   }
 
+  @media (min-width: 413px){
+    .float-mol{
+        top: -17%;
+    }
+  }
 
   @media (min-width: 320px) and (max-width: 1110px){
     .container {
@@ -178,8 +183,29 @@ button {
     gap: 2rem;
     }
 
+    .heading h3{
+        font-size: 1.86rem;
+    }
+
+    .heading p{
+        font-size: 1.13rem;
+    }
+
     .left-container{
         width: 100%;
+    }
+
+    .float{
+        font-size: 1rem;
+        width: 45px;
+        height: 45px;
+        top: -17%;
+        left: -9%;
+    }
+
+    .steps p{
+        font-size: 1.2rem;
+        padding-right: 0.4rem;
     }
 
     .image img{

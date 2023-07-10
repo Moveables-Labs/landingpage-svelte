@@ -212,6 +212,15 @@ section{
 
 @media (min-width: 320px) and (max-width: 670px){
 
+  .heading h3{
+    font-size: 2rem !important;
+    margin-top: -10% !important;
+  }
+
+  .heading p{
+    font-size: 1.1rem !important;
+  }
+
   .left-card-text, .right-card-text{
     line-height: 0.8rem !important;
     letter-spacing: normal !important;

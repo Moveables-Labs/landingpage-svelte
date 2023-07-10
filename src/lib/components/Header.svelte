@@ -9,8 +9,8 @@
 <nav>
   <a href="/">
     <div class="logo">
-      <img src="/images/logo.svg" alt="logo" />
-      <img src="/images/logo-text.svg" alt="logo-text" />
+      <img src="/images/logo.svg" alt="logo" class="logo-pic"/>
+      <img src="/images/logo-text.svg" alt="logo-text" class="logo-text"/>
     </div>
   </a>
   <div class="menu-container">
@@ -87,6 +87,14 @@
   }
 
   @media (max-width: 1110px) {
+    .logo-pic{
+      width: 30px;
+    }
+
+    .logo-text{
+      width: 100px !important;
+    }
+    
     .menu-container {
       display: none;
     }
