@@ -371,5 +371,12 @@ import Confirmation from "../dropdown/confirmation.svelte";
             margin-top: 12px;
             margin-bottom: 22px;
         }
+
+        .confirmation{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #451297;
+        }
     }   
 </style>
