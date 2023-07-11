@@ -12,7 +12,7 @@
   .form{
     padding: 2rem 2rem !important;
     background: linear-gradient(
-      40deg,
+      60deg,
       #3C0F84 21.46%,
       #200846 45%,
       white 40%,

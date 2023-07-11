@@ -108,192 +108,191 @@ import Confirmation from "../dropdown/confirmation.svelte";
 </div> -->
 
 <style>
-    .form-container{
-        display: flex;
-        gap: 2rem;
-        width: 100%;
-        height: 100vh;
-        position: relative;
-    }
-    
-    .content{
-        display: flex;
-        flex-direction: row;
-        width: 70%;
-    }
-    
-    .listed{
-        display: flex;
-        flex-direction: column;
-        gap: 15rem;
-        width: 35%;
-    }
-    
-    .listed img{
-        width: 40px;
-        margin-top: 30px;
-    }
-    
-    .listed p{
-        font-size: clamp(1.1rem, 35px, 34px);
-        font-family: Syne !important;
-        font-style: normal;
-        font-weight: bold;
-        line-height: normal;
-        color: #fff;
-        letter-spacing: 2px;
-    }
-    
-    .small-icons{
-        display: flex;
-        width: 80%;
-        position: absolute;
-        bottom: 0;
-    }
-    
-    
-    .circle img{
-        width: 33px;
-        border: 1px solid white;
-        border-radius: 30px;
-        padding: 5px;
-    }
-    
-    .line{
-        width: 30px;
-        height: 1px;
-        background: white;
-        margin-top: 45px;
-    }
-    
-    .customer{
-        position: absolute;
-        bottom: 0;
-        left: 5%;
-        width: 76.5625rem;
-        height: 50.4375rem;
-        z-index: 0;
-    }
-    
-    .waitlist-group{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        width: 40%;
-    }
+.form-container{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
 
-    
-    .go-back a{
-        cursor: pointer !important;
-        display: flex;
-        gap: 0.4rem;
-        z-index: 99;
-        font-size: 1rem;
-        font-weight: normal;
-    }
-    
-    .go-back a img{
-        width: 10px;
-    }
-    
-    form{
-        display: flex;
-        flex-direction: column;
-        gap: 0.8rem;
-        width: 80%;
-    }
-    
-    form h1{
-        font-size: 40px;
-        font-family: Syne;
-        font-weight: bold;
-        line-height: normal;
-        width: 90%;
-    }
-    
-    form input{
-        outline: none;
-        border: 0.834px solid #F8F3FF;
-        border-radius: 12px;
-        background: #ECECEC;
-        padding: 1rem 1.35rem;
-    }
-    
-    .location{
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .location select{
-        outline: none;
-        border: 0.834px solid #F8F3FF;
-        border-radius: 12px;
-        background: #ECECEC;
-        padding: 1rem 1.35rem;
-    }
-    
-    .location div{
-        outline: none;
-        border: 0.834px solid #F0F0F0;
-        border-radius: 12px;
-        padding: 1rem 2.2rem;
-    }
-    
-    .delivery-icons{
-        display: flex;
-        justify-content: space-around;
-        margin-top: 5px;
-        width: 80%;
-        gap: 23px;
-    }
-    
-    .delivery-buttons{
-        outline: none;
-        border: none;
-        background: none;
-        cursor: pointer;
-        padding-bottom: -2%;
-        border-radius: 10.336px;
-        border: 0.738px solid #C8C8C8;
-        background: #F5F5F5;
-    }
-    
-    .delivery-buttons:hover{
-        border: 1px solid #711DF9;
-        border-radius: 10.336px;
-        transform: scale(1.1);
-        transition: transform ease-in 400ms;
-    }
-    
-    .delivery-buttons:active, .delivery-buttons:focus{
-        border: 1px solid #711DF9;
-    }
-    
-    .delivery-icons img{
-        padding: 0px 25px;
-    }
-    
-    .irr{
-        padding: 15px 30px !important;
-    }
-    
-    .submit{
-        width: 80%;
-        padding: 0.94rem 1.2rem;
-        border-radius: 4px;
-        outline: none;
-        border: none;
-        background: #711DF9;
-        box-shadow: -2px 2px 10px 0px rgba(0, 0, 0, 0.25);
-        color: #fff;
-        font-size: 1rem;
-        font-weight: normal;
-        letter-spacing: 1px;
-        line-height: 1.25rem;
-        cursor: pointer;
-        margin-top: 8px;
-        margin-left: 4px;
-    }
+.content{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+
+.listed{
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+    width: 50%;
+}
+
+.listed img{
+    width: 40px;
+    margin-top: 30px;
+}
+
+.listed p{
+    font-size: clamp(1rem, 35px, 30px);
+    font-family: Syne !important;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    color: #fff;
+    letter-spacing: 2px;
+    width: 90%;
+}
+
+.small-icons{
+    display: flex;
+    width: 80%;
+}
+
+
+.circle img{
+    width: 33px;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.line{
+    width: 30px;
+    height: 1px;
+    background: white;
+    margin-top: 45px;
+}
+
+.customer{
+    position: absolute;
+    bottom: 4%;
+    left: -2%;
+    width: 75rem;
+    height: 48rem;
+    z-index: 0;
+}
+
+.waitlist-group{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.go-back a{
+    cursor: pointer !important;
+    display: flex;
+    gap: 0.4rem;
+    padding-top: 2rem;
+    z-index: 99;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.go-back a img{
+    width: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+}
+
+form h1{
+    font-size: 40px;
+    font-family: Syne;
+    font-weight: bold;
+    line-height: normal;
+    width: 80%;
+}
+
+form input{
+    outline: none;
+    border: 0.834px solid #F8F3FF;
+    border-radius: 12px;
+    background: #ECECEC;
+    padding: 1rem 1.35rem;
+}
+
+.location{
+    display: flex;
+    justify-content: space-between;
+}
+
+.location select{
+    outline: none;
+    border: 0.834px solid #F8F3FF;
+    border-radius: 12px;
+    background: #ECECEC;
+    padding: 1rem 1.35rem;
+}
+
+.location div{
+    outline: none;
+    border: 0.834px solid #F0F0F0;
+    border-radius: 12px;
+    padding: 1rem 2.2rem;
+}
+
+.delivery-icons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    width: 100%;
+    gap: 40px;
+}
+
+.delivery-buttons{
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding-bottom: -2%;
+    border-radius: 10.336px;
+    border: 0.738px solid #C8C8C8;
+    background: #F5F5F5;
+}
+
+.delivery-buttons:hover{
+    border: 1px solid #711DF9;
+    border-radius: 10.336px;
+    transform: scale(1.1);
+    transition: transform ease-in 400ms;
+}
+
+.delivery-buttons:active, .delivery-buttons:focus{
+    border: 1px solid #711DF9;
+}
+
+.delivery-icons img{
+    padding: 0px 25px;
+}
+
+.irr{
+    padding: 15px 30px !important;
+}
+
+.submit{
+    width: 100%;
+    padding: 0.94rem 1.2rem;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background: #711DF9;
+    box-shadow: -2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 1.25rem;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-left: 4px;
+}
     
     .submit:hover{
         background-color: #5f18d1;
