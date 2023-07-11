@@ -10,7 +10,7 @@
   
   <style>
   .form{
-    padding: 2rem 2rem !important;
+    padding: 0rem 2.5rem !important;
     background: linear-gradient(
       60deg,
       #3C0F84 21.46%,

@@ -178,6 +178,7 @@ import Confirmation from "../dropdown/confirmation.svelte";
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-right: 1rem;
 }
 
 
