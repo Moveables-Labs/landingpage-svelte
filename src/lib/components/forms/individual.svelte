@@ -125,7 +125,7 @@ import Confirmation from "../dropdown/confirmation.svelte";
     display: flex;
     flex-direction: column;
     gap: 15rem;
-    width: 35%;
+    width: 50%;
 }
 
 .listed img{
@@ -134,13 +134,14 @@ import Confirmation from "../dropdown/confirmation.svelte";
 }
 
 .listed p{
-    font-size: clamp(1.1rem, 35px, 34px);
+    font-size: clamp(1rem, 35px, 30px);
     font-family: Syne !important;
     font-style: normal;
     font-weight: bold;
     line-height: normal;
     color: #fff;
     letter-spacing: 2px;
+    width: 90%;
 }
 
 .small-icons{
@@ -166,9 +167,9 @@ import Confirmation from "../dropdown/confirmation.svelte";
 .customer{
     position: absolute;
     bottom: 0;
-    left: 5%;
-    width: 76.5625rem;
-    height: 50.4375rem;
+    left: -2%;
+    width: 100%;
+    height: 100%;
     z-index: 0;
 }
 
@@ -197,7 +198,7 @@ form{
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
-    width: 80%;
+    width: 100%;
 }
 
 form h1{
@@ -240,8 +241,8 @@ form input{
     display: flex;
     justify-content: space-around;
     margin-top: 5px;
-    width: 80%;
-    gap: 23px;
+    width: 100%;
+    gap: 40px;
 }
 
 .delivery-buttons{
@@ -275,7 +276,7 @@ form input{
 }
 
 .submit{
-    width: 80%;
+    width: 100%;
     padding: 0.94rem 1.2rem;
     border-radius: 4px;
     outline: none;
