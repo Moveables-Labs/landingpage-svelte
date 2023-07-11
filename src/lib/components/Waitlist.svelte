@@ -22,9 +22,9 @@
 
         <div class="right-content">
             <p>Join our delivery agent waitlist</p>
-            <button>Independent Dispatcher</button>
+            <a href="/individual">Independent Dispatcher</a>
             <p class="center">Or</p>
-            <button>Company Dispatcher</button>
+            <a href="/company">Company Dispatcher</a>
         </div>
     </div>
 </section>
@@ -159,7 +159,7 @@ button.left-btn{
     padding-right: 3rem;
 }
 
-button{
+a{
     width: 90%;
     margin-top: 3%;
     padding: 0.94rem 1.2rem;
@@ -170,6 +170,8 @@ button{
     font-size: 1rem;
     font-weight: 600;
     line-height: 1.25rem;
+    text-align: center;
+    letter-spacing: 0px;
 }
 
 button:hover{
@@ -182,6 +184,13 @@ button:hover{
 button:active{
     background-color: var(--btn-active);
     color: white;
+    cursor: pointer;
+}
+
+a:active, a:hover{
+    background-color: var(--btn-hover);
+    color: white;
+    transition: ease-in-out 200ms;
     cursor: pointer;
 }
 

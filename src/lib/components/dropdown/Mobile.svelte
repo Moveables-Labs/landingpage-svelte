@@ -88,7 +88,7 @@
     align-items: start;
     list-style-type: none;
     gap: 1rem;
-    font-size: 1.4rem;
+    font-size: 1rem;
     margin-top: 3rem;
     margin-left: 1rem;
   }
