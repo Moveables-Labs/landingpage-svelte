@@ -60,7 +60,7 @@ import Confirmation from "../dropdown/confirmation.svelte";
 </section>
 
 
-<div class="waitlist-group">
+<div class="waitlist-group mobile">
     <div class="go-back">
         <a href="/">
             <img src="/icons/backspace-icon.svg" alt="">

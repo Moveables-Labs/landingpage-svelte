@@ -12,16 +12,16 @@
   
   <div bind:this={menu} >
     <ul class="dropdown-label">
-      <a href="#" target="_blank" class="dropdown-label-link">
-        <li class="dropdown-label-target one">Instagram</li>
+      <a href="https://www.instagram.com/move.ables/" target="_blank" class="dropdown-label-link">
+        <li class="dropdown-label-target">Instagram</li>
       </a>
   
-      <a href="#" target="_blank" class="dropdown-label-link">
-        <li class="dropdown-label-target two">Facebook</li>
+      <a href="http://linkedin.com/company/moveables" target="_blank" class="dropdown-label-link">
+        <li class="dropdown-label-target">LinkedIn</li>
       </a>
   
-      <a href="#" target="_blank" class="dropdown-label-link">
-        <li class="dropdown-label-target three">Twitter</li>
+      <a href="https://twitter.com/m0veables?s=20" target="_blank" class="dropdown-label-link">
+        <li class="dropdown-label-target">Twitter</li>
       </a>
     </ul>
   </div>

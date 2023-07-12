@@ -18,15 +18,14 @@
         </div>
       </div>
 
-      <img src="/images/delivery.png" alt="" class="customer" />
     </div>
 
-    <div class="waitlist-group mobile">
+    <div class="waitlist-group">
       <div class="go-back">
-        <a href="/">
+        <div>
           <img src="/icons/backspace-icon.svg" alt="" />
-          <p>Go back</p>
-        </a>
+          <a href="/">Go back</a>
+        </div>
       </div>
 
       <form action="/api" method="post">
@@ -81,8 +80,73 @@
         <button class="submit"> Join waitlist </button>
       </form>
     </div>
+
+
   </section>
 </section>
+
+<!--Mobile view-->
+<div class="waitlist-group mobile">
+  <div class="go-back">
+    <div>
+      <img src="/icons/backspace-icon.svg" alt="" />
+      <a href="/">Go back</a>
+    </div>
+  </div>
+
+  <form action="/api" method="post">
+    {#if $page.params.slug == "individual"}
+      <h1>Individual dispatcher form</h1>
+      <p>Name</p>
+      <input type="text" name="name" id="name" placeholder="Name" />
+    {:else}
+      <h1>Company's dispatch form</h1>
+      <p>Company's Name</p>
+      <input type="text" name="company" id="company" placeholder="Name" />
+    {/if}
+
+    <p>Phone no.</p>
+    <input type="tel" name="tel" id="tel" placeholder="+234" />
+    <p>Email</p>
+    <input
+      type="email"
+      name="email"
+      id="email"
+      placeholder="example@gmail.com"
+    />
+    <p>State</p>
+    <div class="location">
+      <select name="state" id="state">
+        <option value="" disabled selected>State</option>
+      </select>
+      <div>Edo</div>
+    </div>
+
+    {#if $page.params.slug == "individual"}
+      <input type="text" name="tag" value="Individual" hidden />
+    {:else}
+      <input type="text" name="tag" value="Company" hidden />
+    {/if}
+
+    <div class="delivery">
+      <p>Delivery method</p>
+      <div class="delivery-icons">
+        <button class="delivery-buttons"
+          ><img src="/icons/bike-delivery.svg" alt="" /></button
+        >
+        <button class="delivery-buttons"
+          ><img src="/icons/car-delivery.svg" alt="" class="irr" /></button
+        >
+        <button class="delivery-buttons"
+          ><img src="/icons/keke-delivery.svg" alt="" class="irr" /></button
+        >
+      </div>
+    </div>
+
+    <button class="submit"> Join waitlist </button>
+  </form>
+</div>
+
 
 <style>
   .form {
@@ -172,8 +236,7 @@
     padding-right: 1rem;
   }
 
-  .go-back a {
-    cursor: pointer !important;
+  .go-back div {
     display: flex;
     gap: 0.4rem;
     padding-top: 2rem;
@@ -292,7 +355,7 @@
   }
 
   .mobile {
-    /* display: none; */
+    display: none;
   }
 
   .confirmation {
@@ -316,6 +379,7 @@
       width: 100% !important;
       height: 100%;
       margin: 0px auto !important;
+      padding: 0rem 2rem;
     }
 
     form h1 {
@@ -331,6 +395,7 @@
 
     .go-back {
       padding-top: 0rem !important;
+      margin-bottom: 1rem;
     }
 
     form {
