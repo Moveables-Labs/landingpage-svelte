@@ -49,78 +49,73 @@
     min-height: 5vh;
   }
 
-  .hero{
+  .hero {
     padding: 2rem 5rem;
     height: 80vh;
     background: linear-gradient(180deg, var(--overlay), transparent),
-                url('/images/overlay.svg') no-repeat center center / cover;
+      url("/images/overlay.svg") no-repeat center center / cover;
   }
 
-  .service{
+  .service {
     padding: 2rem 5rem;
     min-height: 90vh;
-    background: #E8D8FD;
+    background: #e8d8fd;
     position: relative;
     padding-bottom: 50px;
   }
 
-  .steps{
+  .steps {
     padding: 2rem 5rem;
     min-height: 100vh;
   }
 
-  .features{
+  .features {
     min-height: 100vh;
     background: var(--background);
     padding: 2rem 5rem;
   }
 
-  .waitlist{
+  .waitlist {
     padding: 2rem 5rem;
     min-height: 40vh;
     background: #fff;
   }
 
-  .blog{
+  .blog {
     min-height: 60vh;
     background: var(--background);
     padding: 2rem 5rem;
   }
 
-  .footer{
+  .footer {
     min-height: 50vh;
     padding: 2rem 5rem;
   }
 
-  @media (max-width: 376px){
-    .hero{
+  @media (max-width: 376px) {
+    .hero {
       height: 100% !important;
     }
-    .service{
+    .service {
       height: 100%;
     }
   }
 
-
-  @media (max-width: 1110px){
-    section{
+  @media (max-width: 1110px) {
+    section {
       padding: 1rem !important;
     }
 
-    .hero{
+    .hero {
       height: 100%;
     }
 
-    .service{
+    .service {
       height: 100%;
     }
 
-    .blog{
+    .blog {
       display: none;
     }
   }
-
-
-
-
 </style>
