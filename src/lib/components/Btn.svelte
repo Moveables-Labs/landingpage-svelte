@@ -1,10 +1,14 @@
-<button>
-  <slot><!-- optional fallback --></slot>
-</button>
+<script>
+  import Waitlist from "./Waitlist.svelte";
+</script>
+
+  <button onclick="window.location.href = '#waitlist'">
+    <slot><!-- optional fallback --></slot>
+  </button>
 
 <style>
   button {
-    color: white;
+    color: white !important;
     font-weight: normal;
     letter-spacing: 1px;
     width: 10rem;

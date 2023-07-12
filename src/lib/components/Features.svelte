@@ -2,7 +2,7 @@
 
 </script>
 
-<section>
+<section id="features">
     <div class="heading">
         <h3>Why choose us?</h3>
         <p>Moveables is committed to making your everyday delivery experience alot easier by providing the following features:</p>

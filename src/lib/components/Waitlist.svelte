@@ -2,7 +2,7 @@
 
 </script>
 
-<section>
+<section id="waitlist">
     <p class="launch"><span><img src="/icons/space.svg" alt=""></span>Launching soon!!!!!</p>
     <div class="heading">
         <h3>Join our waitlist</h3>

@@ -15,8 +15,6 @@ import Confirmation from "../dropdown/confirmation.svelte";
                 <div class="circle"><img src="/icons/truck-white.svg" alt=""></div>
             </div>
         </div>
-
-        <img src="/images/delivery.png" alt="" class="customer">
     </div>
 
     <div class="waitlist-group mobile">

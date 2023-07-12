@@ -1,5 +1,6 @@
 <script>
   import Btn from "./Btn.svelte";
+  import Features from "./Features.svelte";
 </script>
 
 <section class="hero">
@@ -10,7 +11,7 @@
     </p>
     <div>
       <Btn>Get Started</Btn>
-      <button>Learn More</button>
+        <button onclick="window.location.href = '#features'">Learn More</button>
     </div>
   </div>
 

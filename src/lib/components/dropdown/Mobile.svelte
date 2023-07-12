@@ -57,7 +57,7 @@
     top: 0;
     right: 0;
     background-color: #f2e9ff;
-    width: 70%;
+    width: 320px;
     height: 100%;
     z-index: 100;
     display: flex;
