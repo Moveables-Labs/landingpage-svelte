@@ -11,7 +11,7 @@
 
 <div>
   <ul bind:this={menu} class="dropdown-label">
-    <a href="https://www.instagram.com/move.ables/" target="_blank" class="dropdown-label-link">
+    <a href="https://www.instagram.com/move_ables/" target="_blank" class="dropdown-label-link">
       <li class="dropdown-label-target">Instagram</li>
     </a>
 
