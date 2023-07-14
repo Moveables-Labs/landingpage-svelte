@@ -118,7 +118,43 @@
     <p>State</p>
     <div class="location">
       <select name="state" id="state">
-        <option value="" disabled selected>State</option>
+        <!-- <option value="" disabled selected>State</option> -->
+        <option value="Abia"></option>
+        <option value="Adamawa"></option>
+        <option value="Akwa Ibom"></option>
+        <option value="Anambra"></option>
+        <option value="Bauchi"></option>
+        <option value="Bayelsa"></option>
+        <option value="Benue"></option>
+        <option value="Borno"></option>
+        <option value="Cross River"></option>
+        <option value="Delta"></option>
+        <option value="Ebonyi"></option>
+        <option value="Edo"></option>
+        <option value="Ekiti"></option>
+        <option value="Enugu"></option>
+        <option value="Gombe"></option>
+        <option value="Imo"></option>
+        <option value="Jigawa"></option>
+        <option value="Kaduna"></option>
+        <option value="Kano"></option>
+        <option value="Katsina"></option>
+        <option value="Kebbi"></option>
+        <option value="Kogi"></option>
+        <option value="Kwara"></option>
+        <option value="Lagos"></option>
+        <option value="Nasarawa"></option>
+        <option value="Niger"></option>
+        <option value="Ogun"></option>
+        <option value="Ondo"></option>
+        <option value="Osun"></option>
+        <option value="Oyo"></option>
+        <option value="Plateau"></option>
+        <option value="Rivers"></option>
+        <option value="Sokoto"></option>
+        <option value="Taraba"></option>
+        <option value="Yobe"></option>
+        <option value="Zamfara"></option>
       </select>
       <div>Edo</div>
     </div>
