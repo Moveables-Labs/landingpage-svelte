@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
   import Btn from "./Btn.svelte";
   import Features from "./Features.svelte";
 </script>
@@ -57,7 +59,7 @@
     margin-bottom: 15px;
     flex: 1 0 0;
     width: 32rem;
-    letter-spacing: 2px;
+    letter-spacing: 2px;  
   }
 
   .text-container p {

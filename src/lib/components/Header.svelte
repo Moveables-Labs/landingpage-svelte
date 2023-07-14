@@ -27,7 +27,7 @@
         </div>
         <Dropdown bind:this={dropdown} />
       </li>
-      <li class="menu-item"><a href="/" class="menu-link">About Us</a></li>
+      <li class="menu-item"><a href="/about" class="menu-link">About Us</a></li>
     </ul>
     <Btn>Get Started</Btn>
   </div>

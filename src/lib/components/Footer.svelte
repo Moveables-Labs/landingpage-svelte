@@ -18,12 +18,12 @@ import Waitlist from "./Waitlist.svelte";
             <p>We are committed to giving you the best delivery service.</p>
 
             <div class="socials">
-                <a href="https://www.instagram.com/move_ables/" target="_blank" class="dropdown-label-link">
+                <a href="https://twitter.com/m0veables?s=20" target="_blank" class="dropdown-label-link">
                     <img src="/icons/twitter.svg" alt=""></a>
                 <a href="http://linkedin.com/company/moveables" target="_blank" class="dropdown-label-link">
                     <img src="/icons/linkedin.svg" alt="">
                 </a>
-                <a href="https://twitter.com/m0veables?s=20" target="_blank" class="dropdown-label-link">
+                <a href="https://www.instagram.com/move_ables/" target="_blank" class="dropdown-label-link">
                     <img src="/icons/instagram.svg" alt="">
                 </a>
             </div>
@@ -52,11 +52,11 @@ import Waitlist from "./Waitlist.svelte";
                     <img src="/icons/mail.svg" alt="">
                     <li>moveables@gmail.com</li></a>
 
-                <div class="contact" href="#">
+                <div class="contact">
                     <img src="/icons/phone.svg" alt="">
                     <li>+234 554 665 7778</li></div>
 
-                <div class="contact" href="#">
+                <div class="contact">
                     <img src="/icons/location.svg" alt="">
                     <li>Benin City, Edo State.</li></div>
 

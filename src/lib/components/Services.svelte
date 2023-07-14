@@ -134,12 +134,11 @@ section{
 }
 
 .heading{
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 2.5rem;
     max-width: 65%;
     text-align: center;
     font-family: Syne;
-    letter-spacing: 2px;
     margin-bottom: 1rem;
 }
 

@@ -29,7 +29,7 @@
     <img src={icon} alt="" id="close"  on:click={toggle_menu} on:keydown={toggle_menu}/>
   </div>
   <ul class="nav-menu" bind:this={menu}>
-    <li>Home</li>
+    <a href="/"><li>Home</li></a>
     <li>
       <div
         class="dropdown-label"
@@ -47,7 +47,7 @@
       </div>
       <Dropdown bind:this={dropdown} />
     </li>
-    <li>About Us</li>
+    <a href="/about"><li>About Us</li></a>
   </ul>
 </div>
 
