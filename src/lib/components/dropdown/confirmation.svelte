@@ -123,7 +123,7 @@
 
 
 
-@media (max-width: 1110px){
+@media (max-width: 767px){
 .confirm-popup{
     display: none;
 }

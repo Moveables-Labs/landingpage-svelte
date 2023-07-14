@@ -1,6 +1,7 @@
 <script>
   import { page } from "$app/stores";
   import "$lib/assets/styles/global.css";
+  import Confirmation from "$lib/components/dropdown/confirmation.svelte";
 </script>
 
 <section class="form">
@@ -147,6 +148,10 @@
   </form>
 </div>
 
+
+<div class="confirmation">
+    <Confirmation />
+</div>
 
 <style>
   .form {
@@ -364,9 +369,10 @@
     display: flex;
     width: 480px;
     height: 470px;
-    border-radius: 25px;
     background: rgba(199, 161, 249, 0.8);
     backdrop-filter: blur(20px);
+    top: 20%;
+    left: 30%;
   }
 
   @media (max-width: 1110px) {
@@ -431,12 +437,25 @@
       margin-top: 12px;
       margin-bottom: 22px;
     }
+    
+  }
 
-    .confirmation {
+
+@media (max-width: 767px) {
+  .confirmation {
       position: absolute;
       width: 100%;
       height: 100%;
       background: #451297;
-    }
-  }
+      top: 0;
+      left: 0;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1110px){
+  .confirmation {
+      top: 150px;
+      left: 20%;
+}
+}
 </style>
