@@ -88,7 +88,7 @@
 
   @media (max-width: 1110px) {
     .logo-pic{
-      width: 30px;
+      width: 25px;
     }
 
     .logo-text{

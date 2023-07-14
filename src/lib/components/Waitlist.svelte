@@ -58,7 +58,7 @@
   }
 
   .heading h3 {
-    font-size: 2.25rem;
+    font-size: 2.2rem;
     text-align: center;
     font-family: Syne;
     padding-top: 3rem;
@@ -69,7 +69,7 @@
     font-family: Syne;
     font-weight: 500;
     padding-top: 1rem;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
   }
 
   .content {
@@ -113,7 +113,7 @@
 
   .left-content,
   .right-content p {
-    font-size: 0.98rem;
+    font-size: 0.89rem;
   }
 
   .email {
@@ -140,7 +140,7 @@
   button.left-btn {
     width: 90%;
     padding: 0.94rem 1.2rem;
-    border-radius: 4px;
+    border-radius: 5px;
     outline: none;
     border: none;
     background: linear-gradient(
@@ -171,7 +171,7 @@
     width: 90%;
     margin-top: 3%;
     padding: 0.94rem 1.2rem;
-    border-radius: 4px;
+    border-radius: 5px;
     outline: none;
     border: none;
     background: #fff;
@@ -243,15 +243,16 @@
 
     .heading h3 {
       margin: auto;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
     }
 
     .heading p {
       font-weight: normal;
-      font-size: 0.8rem;
-      text-align: center;
-      padding: 2px 5px;
+      font-size: 0.82rem;
+      padding: 9px 5px;
       margin-top: 8px;
+      width: 85%;
+      margin: auto;
     }
 
     .launch {
@@ -263,7 +264,7 @@
     }
 
     .content p {
-      font-size: 0.87rem;
+      font-size: 0.82rem;
     }
 
     .center {
@@ -276,13 +277,17 @@
       width: 90%;
       margin-top: 3%;
       padding: 0.8rem 0.9rem;
-      border-radius: 4px;
+      border-radius: 5px;
       outline: none;
       border: none;
       background: #fff;
       font-size: 0.8rem;
       font-weight: 600;
       line-height: 1.25rem;
+    }
+
+    button.left-btn{
+      border-radius: 5px;
     }
   }
 </style>

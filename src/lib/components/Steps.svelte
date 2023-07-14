@@ -55,10 +55,10 @@ section{
 }
 
 .heading h3{
-    font-size: 2.4rem;
+    font-size: 2.35em;
     text-align: center;
     font-family: Syne;
-    padding-top: 3rem;
+    padding-top: 0rem;
 }
 
 .heading p{
@@ -66,7 +66,7 @@ section{
     font-family: Syne;
     font-weight: 500;
     padding-top: 1rem;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
 }
 
 .container{
@@ -85,7 +85,7 @@ section{
 }
 
 .steps{
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-family: Manrope;
     font-weight: 400;
     border: 3px solid var(--purple);
@@ -116,8 +116,8 @@ section{
     align-items: center;
     display: flex;
     position: absolute;
-    top: -29%;
-    left: -7%;
+    top: -30%;
+    left: -9%;
 }
 
 .line{
@@ -125,7 +125,7 @@ section{
     align-items: center;
     justify-content: center;
     width: 1px;
-    height: 3rem;
+    height: 4rem;
     border-width: 0.08rem;
     border-style: solid;
     border-color: #8D4AFA;
@@ -184,11 +184,12 @@ button {
     }
 
     .heading h3{
-        font-size: 1.55rem;
+        font-size: 1.36rem;
+        padding-top: 0.8rem;
     }
 
     .heading p{
-        font-size: 1rem;
+        font-size: 0.86rem;
     }
 
     .left-container{
@@ -196,7 +197,7 @@ button {
     }
 
     .float{
-        font-size: 1rem;
+        font-size: 0.86rem;
         width: 45px;
         height: 45px;
         top: -17%;
@@ -204,8 +205,8 @@ button {
     }
 
     .steps p{
-        font-size: 1.12rem;
-        padding-right: 0.4rem;
+        font-size: 1rem;
+        padding-right: 1rem;
     }
 
     .image img{
@@ -216,6 +217,14 @@ button {
         display: block;
         width: 100%;
         box-shadow: 11px 5px 30px -5px rgba(0, 0, 0, 0.25);
+    }
+
+    button{
+        border-radius: 5px;
+    }
+
+    .container{
+        padding-top: 1.6rem;
     }
   }
 

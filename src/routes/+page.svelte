@@ -51,14 +51,14 @@
 
   .hero {
     padding: 2rem 5rem;
-    height: 80vh;
+    height: 100%;
     background: linear-gradient(180deg, var(--overlay), transparent),
       url("/images/overlay.svg") no-repeat center center / cover;
   }
 
   .service {
     padding: 2rem 5rem;
-    min-height: 90vh;
+    height: 100%;
     background: #e8d8fd;
     position: relative;
     padding-bottom: 50px;
@@ -66,11 +66,11 @@
 
   .steps {
     padding: 2rem 5rem;
-    min-height: 100vh;
+    height: 100%;
   }
 
   .features {
-    min-height: 100vh;
+    height: 100%;
     background: var(--background);
     padding: 2rem 5rem;
   }

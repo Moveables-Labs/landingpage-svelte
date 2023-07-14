@@ -1,5 +1,6 @@
 <script>
 let date = new Date().getFullYear();
+import Waitlist from "./Waitlist.svelte";
 </script>
 
 <footer class="footer">
@@ -17,10 +18,14 @@ let date = new Date().getFullYear();
             <p>We are committed to giving you the best delivery service.</p>
 
             <div class="socials">
-                <a href="#"><img src="/icons/twitter.svg" alt=""></a>
-                <a href="#"><img src="/icons/facebook.svg" alt=""></a>
-                <a href="#"><img src="/icons/linkedin.svg" alt=""></a>
-                <a href="#"><img src="/icons/instagram.svg" alt=""></a>
+                <a href="https://www.instagram.com/move_ables/" target="_blank" class="dropdown-label-link">
+                    <img src="/icons/twitter.svg" alt=""></a>
+                <a href="http://linkedin.com/company/moveables" target="_blank" class="dropdown-label-link">
+                    <img src="/icons/linkedin.svg" alt="">
+                </a>
+                <a href="https://twitter.com/m0veables?s=20" target="_blank" class="dropdown-label-link">
+                    <img src="/icons/instagram.svg" alt="">
+                </a>
             </div>
 
         </div>
@@ -29,7 +34,7 @@ let date = new Date().getFullYear();
             <h4>About Us</h4>
             <ul>
                 <a href="#"><li>About Us</li></a>
-                <a href="#"><li>Join Waitlist</li></a>
+                <a href="#waitlist"><li>Join Waitlist</li></a>
             </ul>
         </div>
         <div class="footer-column col">
@@ -43,17 +48,17 @@ let date = new Date().getFullYear();
         <div class="footer-column col last">
             <h4>Contact Us</h4>
             <ul>
-                <a class="contact" href="#">
+                <a class="contact" href="mailto:moveables@gmail.com">
                     <img src="/icons/mail.svg" alt="">
                     <li>moveables@gmail.com</li></a>
 
-                <a class="contact" href="#">
+                <div class="contact" href="#">
                     <img src="/icons/phone.svg" alt="">
-                    <li>+234 554 665 7778</li></a>
+                    <li>+234 554 665 7778</li></div>
 
-                <a class="contact" href="#">
+                <div class="contact" href="#">
                     <img src="/icons/location.svg" alt="">
-                    <li>Benin City, Edo State.</li></a>
+                    <li>Benin City, Edo State.</li></div>
 
             </ul>
         </div>

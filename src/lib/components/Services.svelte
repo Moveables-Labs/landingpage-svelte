@@ -134,13 +134,13 @@ section{
 }
 
 .heading{
-    font-size: 2.25rem;
+    font-size: 2rem;
     line-height: 2.5rem;
     max-width: 65%;
     text-align: center;
     font-family: Syne;
-    padding-top: 3rem;
     letter-spacing: 2px;
+    margin-bottom: 1rem;
 }
 
 .carousel{
@@ -267,10 +267,11 @@ section{
 
 @media (min-width: 320px) and (max-width: 670px){
     .heading{
-        font-size: 1.2rem;
-        max-width: 100%;
+        font-size: 1.05rem;
+        max-width: 95%;
         padding-top: 1rem;
         line-height: 2rem;
+        letter-spacing: 1px;
     }
 
     .card-content-title img{

@@ -50,11 +50,11 @@ section{
     width: 100%;
 }
 .heading h3{
-    font-size: 2.25rem;
+    font-size: 2.2rem;
     text-align: start;
     font-family: Syne;
     font-weight: 600;
-    padding-top: 3rem;
+    padding-top: 0rem;
 }
 
 .container{

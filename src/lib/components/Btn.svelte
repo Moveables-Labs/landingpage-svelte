@@ -35,6 +35,7 @@
    button{
       width: 50%;
       padding: 0.94rem 1.25rem;
+      border-radius: 5px;
    }
   }
 

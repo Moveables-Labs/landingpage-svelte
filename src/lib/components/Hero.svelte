@@ -35,7 +35,7 @@
   .hero {
     display: flex;
     width: 100%;
-    min-height: 40vh;
+    min-height: 43vh;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -50,18 +50,18 @@
   }
 
   .text-container h1 {
-    font-size: 2.83rem;
+    font-size: 2.1rem;
     font-family: Syne;
     font-weight: 600;
-    line-height: 3rem;
+    line-height: 2.7rem;
     margin-bottom: 15px;
     flex: 1 0 0;
-    width: 38rem;
+    width: 32rem;
     letter-spacing: 2px;
   }
 
   .text-container p {
-    width: 38rem;
+    width: 26rem;
     margin-bottom: 28px;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -141,15 +141,18 @@
 
     .text-container h1{
       width: 100%;
-      font-size: 2.2rem;
-      line-height: normal;
+      font-size: 1.83rem;
+      line-height: 2.2rem;
+      padding-top: 1rem;
+      font-weight: 700;
+      font-family: Manrope;
     }
 
     .text-container p{
       width: 100%;
       margin-bottom: 20px;
       line-height: 1.3rem;
-      font-size: 0.8rem;
+      font-size: 0.91rem;
     }
 
     .text-container div{
@@ -160,6 +163,7 @@
     button{
       width: 50%;
       padding: 0.94rem 1.25rem;
+      border-radius: 5px
     }
 
     .photo-container {

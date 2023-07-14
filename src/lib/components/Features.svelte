@@ -81,7 +81,7 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .heading h3{
@@ -109,7 +109,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.2rem;
+    gap: 5rem;
     flex: 1 0 0;
     padding-top: 3rem;
 }
@@ -120,7 +120,7 @@ section{
     justify-content: flex-start;
     align-items: start;
     gap: 2rem;
-    width: 50%;
+    width: 41.5%;
 }
 
 .left-card{
@@ -162,7 +162,7 @@ section{
     justify-content: flex-start;
     align-items: start;
     gap: 1rem;
-    width: 51%;
+    width: 41%;
     margin-top: -1rem;
     margin-bottom: -1rem;
 }
@@ -213,12 +213,12 @@ section{
 @media (min-width: 320px) and (max-width: 670px){
 
   .heading h3{
-    font-size: 1.85rem !important;
+    font-size: 1.8rem !important;
     margin-top: -10% !important;
   }
 
   .heading p{
-    font-size: 1rem !important;
+    font-size: 0.89rem !important;
     line-height: 1.35rem;
   }
 
@@ -250,8 +250,18 @@ section{
     border-bottom-left-radius: 14px;
   }
 
+  .container {
+    gap: 1.2rem;
+    padding-top: 1.15rem;
+  }
+
   .left-cards{
     gap: 1rem;
+    width: 51%;
+  }
+
+  .right-cards{
+    width: 49%;
   }
 
   .left-card-img {

@@ -25,8 +25,8 @@
 </script>
 
 <div class="burger" bind:this={burger}>
-  <div class="burger-icon" on:click={toggle_menu} on:keydown={toggle_menu}>
-    <img src={icon} alt="" id="close" />
+  <div class="burger-icon">
+    <img src={icon} alt="" id="close"  on:click={toggle_menu} on:keydown={toggle_menu}/>
   </div>
   <ul class="nav-menu" bind:this={menu}>
     <li>Home</li>
