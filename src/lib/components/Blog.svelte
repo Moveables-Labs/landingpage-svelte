@@ -50,7 +50,7 @@ section{
     width: 100%;
 }
 .heading h3{
-    font-size: 2.7rem;
+    font-size: 2.25rem;
     text-align: start;
     font-family: Syne;
     font-weight: 600;
@@ -104,7 +104,7 @@ section{
 }
 
 .content p{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: white;
     font-weight: bold;
     line-height: 1.7rem;
@@ -114,7 +114,7 @@ section{
 }
 
 a{
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: bold;
     color: var(--text-hover);
 }

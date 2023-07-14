@@ -85,7 +85,7 @@ section{
 }
 
 .heading h3{
-    font-size: 3.5rem;
+    font-size: 2.25rem;
     text-align: center;
     font-family: Syne;
     padding-top: 3rem;
@@ -96,7 +96,7 @@ section{
     font-family: Syne;
     font-weight: 500;
     padding-top: 1rem;
-    font-size: 1.65rem;
+    font-size: 1.45rem;
 }
 
 .titles{
@@ -149,7 +149,7 @@ section{
 }
 
 .left-card-text {
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 1.5;
   color: #333;
 }
@@ -205,7 +205,7 @@ section{
 }
 
 .right-card-text {
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 1.5;
   color: #333;
 }
@@ -213,12 +213,13 @@ section{
 @media (min-width: 320px) and (max-width: 670px){
 
   .heading h3{
-    font-size: 2rem !important;
+    font-size: 1.85rem !important;
     margin-top: -10% !important;
   }
 
   .heading p{
-    font-size: 1.1rem !important;
+    font-size: 1rem !important;
+    line-height: 1.35rem;
   }
 
   .left-card-text, .right-card-text{
@@ -290,7 +291,7 @@ section{
   }
 
   .heading h3{
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 </style>

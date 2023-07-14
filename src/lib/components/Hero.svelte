@@ -50,10 +50,10 @@
   }
 
   .text-container h1 {
-    font-size: 3.5rem;
+    font-size: 2.83rem;
     font-family: Syne;
     font-weight: 600;
-    line-height: 4.25rem;
+    line-height: 3rem;
     margin-bottom: 15px;
     flex: 1 0 0;
     width: 38rem;
@@ -63,8 +63,8 @@
   .text-container p {
     width: 38rem;
     margin-bottom: 28px;
-    font-size: 1.1rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .text-container div {
@@ -141,16 +141,15 @@
 
     .text-container h1{
       width: 100%;
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       line-height: normal;
-
     }
 
     .text-container p{
       width: 100%;
       margin-bottom: 20px;
-      line-height: normal;
-      font-size: 0.85rem;
+      line-height: 1.3rem;
+      font-size: 0.8rem;
     }
 
     .text-container div{

@@ -58,7 +58,7 @@
   }
 
   .heading h3 {
-    font-size: 3rem;
+    font-size: 2.25rem;
     text-align: center;
     font-family: Syne;
     padding-top: 3rem;
@@ -69,7 +69,7 @@
     font-family: Syne;
     font-weight: 500;
     padding-top: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.15rem;
   }
 
   .content {
@@ -113,7 +113,7 @@
 
   .left-content,
   .right-content p {
-    font-size: 1rem;
+    font-size: 0.98rem;
   }
 
   .email {
@@ -229,7 +229,7 @@
 
     .left-content,
     .right-content p {
-      font-size: 1rem;
+      font-size: 0.98rem;
       text-align: start;
     }
 
@@ -243,7 +243,7 @@
 
     .heading h3 {
       margin: auto;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
 
     .heading p {

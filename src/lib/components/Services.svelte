@@ -134,7 +134,8 @@ section{
 }
 
 .heading{
-    font-size: 3rem;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
     max-width: 65%;
     text-align: center;
     font-family: Syne;
@@ -212,7 +213,7 @@ section{
 
 
 .card-content-title h3{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-family: Syne;
 }
 
@@ -224,17 +225,18 @@ section{
 
 .card-content-desc h4{
     margin-top: 20px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: Syne;
     letter-spacing: 0.15rem;
     font-weight: 500;
+    line-height: 1.5rem;
 }
 
 .card-content-desc p{
     font-family: Syne;
     max-width: 95%;
     margin-top: 10px;
-    font-size: 1rem;
+    font-size: 0.95rem;
 }
 
 .card-mob{
@@ -265,9 +267,10 @@ section{
 
 @media (min-width: 320px) and (max-width: 670px){
     .heading{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         max-width: 100%;
         padding-top: 1rem;
+        line-height: 2rem;
     }
 
     .card-content-title img{
@@ -287,7 +290,7 @@ section{
 
     .card-content-desc h4{
     margin-top: 15px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: Syne;
     letter-spacing: 0.1rem;
     font-weight: 500;
@@ -296,7 +299,8 @@ section{
 
     .card-content-desc p{
         margin-left: 0.4rem;
-        font-size: 0.85rem
+        font-size: 0.8rem;
+        line-height: 1.2rem;
     }
 
     .irr img{

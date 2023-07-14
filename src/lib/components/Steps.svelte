@@ -55,7 +55,7 @@ section{
 }
 
 .heading h3{
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     text-align: center;
     font-family: Syne;
     padding-top: 3rem;
@@ -66,7 +66,7 @@ section{
     font-family: Syne;
     font-weight: 500;
     padding-top: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
 }
 
 .container{
@@ -85,7 +85,7 @@ section{
 }
 
 .steps{
-    font-size: 1.18rem;
+    font-size: 1.15rem;
     font-family: Manrope;
     font-weight: 400;
     border: 3px solid var(--purple);
@@ -95,7 +95,7 @@ section{
 }
 
 .steps p{
-    padding: 1.2rem;
+    padding: 1.15rem;
     padding-right: 1.8rem;
     padding-left: 1.6rem;
     padding-top: 1.4rem;
@@ -184,11 +184,11 @@ button {
     }
 
     .heading h3{
-        font-size: 1.86rem;
+        font-size: 1.55rem;
     }
 
     .heading p{
-        font-size: 1.13rem;
+        font-size: 1rem;
     }
 
     .left-container{
@@ -204,7 +204,7 @@ button {
     }
 
     .steps p{
-        font-size: 1.2rem;
+        font-size: 1.12rem;
         padding-right: 0.4rem;
     }
 
