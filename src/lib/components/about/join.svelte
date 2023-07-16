@@ -47,6 +47,10 @@ a{
     padding-bottom: 1rem;
 }
 
+.mob-hide{
+    margin: auto;
+}
+
 .logo{
     display: flex;
     gap: 18px;
