@@ -191,7 +191,7 @@
 
 <style>
   .form {
-    padding: 2rem 2rem !important;
+    padding: 1rem 2rem !important;
     height: 100%;
     background: linear-gradient(
       60deg,
