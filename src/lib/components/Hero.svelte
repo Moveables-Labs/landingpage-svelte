@@ -13,7 +13,7 @@
     </p>
     <div>
       <Btn>Get Started</Btn>
-        <button onclick="window.location.href = '#features'">Learn More</button>
+        <button onclick="window.location.href = '/about'">Learn More</button>
     </div>
   </div>
 
