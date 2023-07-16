@@ -192,7 +192,7 @@
 <style>
   .form {
     padding: 2rem 2rem !important;
-    height: 100vh;
+    height: 100%;
     background: linear-gradient(
       60deg,
       #3c0f84 21.46%,
@@ -209,7 +209,7 @@
     display: flex;
     gap: 2rem;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: relative;
   }
 
