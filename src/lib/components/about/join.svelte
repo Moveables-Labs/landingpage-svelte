@@ -1,5 +1,5 @@
 <script>
-
+import AboutBtn from "./about-btn.svelte";
 </script>
 
 <div class="container">
@@ -14,7 +14,10 @@
           <img src="/images/logo-text.svg" alt="logo-text" class="logo-text"/>
         </div>
       </a>
+    <div class="mob-hide">
+        <AboutBtn>Get Started</AboutBtn>
     </div>
+</div>
 
 <style>
 .container{
@@ -36,6 +39,12 @@ p{
     text-align: center;
     font-weight: 700;
     padding: 2rem 0;
+}
+
+a{
+    width: fit-content;
+    margin: auto;
+    padding-bottom: 1rem;
 }
 
 .logo{
@@ -61,5 +70,10 @@ p{
         width: 350px;
         margin: auto;
     }
+
+    .mob-hide{
+        display: none;
+    }
+
 }
 </style>

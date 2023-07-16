@@ -3,7 +3,7 @@
     import Header from "$lib/components/Header.svelte";
     import AboutHero from "$lib/components/about/about-hero.svelte";
     import Explain from "$lib/components/about/explain.svelte";
-    import Features from "$lib/components/Features.svelte";
+    import AboutFeatures from "$lib/components/about/aboutfeatures.svelte";
     import Join from "$lib/components/about/join.svelte";
     import Footer from "$lib/components/Footer.svelte";
   </script>
@@ -21,7 +21,7 @@
   </section>
 
   <section class="features">
-    <Features />
+    <AboutFeatures />
   </section>
 
   <section class="join">

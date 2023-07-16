@@ -1,8 +1,9 @@
 <script>
-  import Waitlist from "./Waitlist.svelte";
+    import Waitlist from "../Waitlist.svelte";
 </script>
 
-  <button onclick="window.location.href = '/#waitlist'">
+
+<button onclick="window.location.href = '/#waitlist'">
     <slot><!-- optional fallback --></slot>
   </button>
 
@@ -21,6 +22,7 @@
       rgba(113, 29, 249, 0.28) 100%
     );
     cursor: pointer;
+    margin: auto;
   }
 
   button:hover {
@@ -31,17 +33,10 @@
     background: var(--btn-active, #8d4afa);
   }
 
-  @media (min-width: 320px) and (max-width: 727px){
-   button{
-      width: 50%;
-      padding: 0.94rem 1.25rem;
-      border-radius: 5px;
-   }
-  }
-
-   @media (min-width: 630px) and (max-width: 1110px) {
+  @media (max-width: 767px){
     button{
-      width: 50%;
+        width: 10rem;
+        padding: 0.65rem 1.3rem;
     }
   }
 </style>

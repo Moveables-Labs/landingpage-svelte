@@ -33,8 +33,8 @@ import Waitlist from "./Waitlist.svelte";
         <div class="footer-column col about">
             <h4>About Us</h4>
             <ul>
-                <a href="#"><li>About Us</li></a>
-                <a href="#waitlist"><li>Join Waitlist</li></a>
+                <a href="/about"><li>About Us</li></a>
+                <a href="/#waitlist"><li>Join Waitlist</li></a>
             </ul>
         </div>
         <div class="footer-column col">

@@ -1,5 +1,5 @@
 <script>
-
+import AboutBtn from "./about-btn.svelte";
 </script>
 
 
@@ -16,6 +16,10 @@
 </div>
 
 <img src="/images/rafiki.svg" alt="" class="rafiki">
+
+<div class="mob-show">
+    <AboutBtn>Get Started</AboutBtn>
+</div>
 </section>
 
 <style>
@@ -58,6 +62,11 @@
     padding-bottom: 0;
 }
 
+.mob-show{
+    display: none;
+}
+
+
 @media (max-width: 767px){
     .pana{
         display: none;
@@ -73,6 +82,14 @@
         margin: auto;
         display: flex;
         width: 300px;
+    }
+
+    .mob-show{
+        display: block;
+        padding-bottom: 1rem;
+        width: fit-content;
+        margin: auto;
+        margin-top: 1rem;
     }
 }
 </style>
