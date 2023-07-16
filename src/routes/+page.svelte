@@ -93,6 +93,7 @@
   }
 
   @media (max-width: 376px) {
+    
     .hero {
       height: 100% !important;
     }
@@ -102,8 +103,14 @@
   }
 
   @media (max-width: 1110px) {
+    
     section {
       padding: 1rem !important;
+    }
+
+    .header{
+      padding: 1rem;
+      padding-top: 1.2rem !important;
     }
 
     .hero {

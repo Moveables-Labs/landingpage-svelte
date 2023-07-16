@@ -70,6 +70,11 @@
 }
 
 @media (max-width: 767px){
+    .header{
+      padding: 1rem;
+      padding-top: 1.2rem;
+    }
+  
     .hero{
         padding: 0rem 1rem;
     }
