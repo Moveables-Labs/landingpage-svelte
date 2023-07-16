@@ -304,8 +304,8 @@ section{
     }
 
     .irr img{
-        width: 17.37rem;
-        margin-left: -0.38rem;
+        width: 17.42rem;
+        margin-left: -0.42rem;
     }
 
     .slider{
