@@ -35,6 +35,8 @@
       <form method="post">
         {#if form?.missing}
           <p>missing email address</p>
+        {:else if form?.error}
+          <p>{form?.message}</p>
         {/if}
 
         {#if $page.params.slug == "individual"}

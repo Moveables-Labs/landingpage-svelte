@@ -18,6 +18,8 @@
     <form class="left-content" method="post">
       {#if form?.missing}
         <p>email is missing</p>
+      {:else if form?.error}
+        <p>{form?.message}</p>
       {/if}
       <p>Join waitlist for to access your go to delivery service</p>
       <div class="email">
@@ -290,7 +292,7 @@
       line-height: 1.25rem;
     }
 
-    button.left-btn{
+    button.left-btn {
       border-radius: 5px;
     }
   }
