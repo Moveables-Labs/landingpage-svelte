@@ -12,6 +12,7 @@
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.5.0",
+		"@types/jsdom": "^21.1.1",
 		"@types/superagent": "^4.1.18",
 		"svelte": "^3.54.0",
 		"svelte-check": "^3.0.1",
@@ -22,6 +23,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/syne": "^5.0.3",
+		"jsdom": "^22.1.0",
 		"superagent": "^8.0.9",
 		"swiper": "^9.4.1"
 	}

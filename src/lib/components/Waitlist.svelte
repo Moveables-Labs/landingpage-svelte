@@ -1,4 +1,5 @@
-<script>
+<script lang="ts">
+  export let form: any;
 </script>
 
 <section id="waitlist">
@@ -14,7 +15,10 @@
   </div>
 
   <div class="content">
-    <form class="left-content" action="/api" method="post">
+    <form class="left-content" method="post">
+      {#if form?.missing}
+        <p>email is missing</p>
+      {/if}
       <p>Join waitlist for to access your go to delivery service</p>
       <div class="email">
         <input name="email" type="email" placeholder="Email Address" />

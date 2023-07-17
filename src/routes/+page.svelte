@@ -1,4 +1,6 @@
-<script>
+<script lang="ts">
+  import type { ActionData, PageData } from "./$types";
+
   import "$lib/assets/styles/global.css";
   import Header from "$lib/components/Header.svelte";
   import Hero from "$lib/components/Hero.svelte";
@@ -8,6 +10,9 @@
   import Waitlist from "$lib/components/Waitlist.svelte";
   import Blog from "$lib/components/Blog.svelte";
   import Footer from "$lib/components/Footer.svelte";
+
+  export let data: PageData;
+  export let form: ActionData;
 </script>
 
 <section class="header">
@@ -31,11 +36,11 @@
 </section>
 
 <section class="waitlist">
-  <Waitlist />
+  <Waitlist {form} />
 </section>
 
 <section class="blog">
-  <Blog />
+  <Blog articles={data.articles} />
 </section>
 
 <section class="footer">

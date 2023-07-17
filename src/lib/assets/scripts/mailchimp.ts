@@ -7,13 +7,32 @@ export type body = {
   merge_fields: any;
 };
 
-const base_url = ".api.mailchimp.com/3.0";
+export const defaultBody = {
+  status: "subscribed",
+  tags: ["USER"],
+  merge_fields: {
+    NAME: "NONE",
+    PHONE: "NONE",
+    COMPANY: "NONE",
+    DTYPE: "NONE",
+    ADDRESS: {
+      addr1: "NONE",
+      city: "NONE",
+      zip: "NONE",
+      state: "NONE",
+    },
+  },
+};
 
-export const ping = (config: { apiKey: string; server: string }) => {
+const base_url = ".api.mailchimp.com/3.0";
+const listId = "8bbb43cca4";
+const server = "us21";
+
+export const ping = (apiKey: string) => {
   return new Promise((resolve, reject) => {
     superagent
-      .default("GET", "https://" + config.server + base_url + "/ping")
-      .auth("user", config.apiKey)
+      .default("GET", "https://" + server + base_url + "/ping")
+      .auth("user", apiKey)
       .type("application/json")
       .accept("application/json")
       .then((res) => {
@@ -26,12 +45,7 @@ export const ping = (config: { apiKey: string; server: string }) => {
   });
 };
 
-export const add_to_audience = (
-  apiKey: string,
-  server: string,
-  listId: string,
-  body: body
-) => {
+export const add_to_audience = (apiKey: string, body: body) => {
   const url = "https://" + server + base_url + "/lists/" + listId + "/members";
 
   return new Promise((resolve, reject) => {

@@ -1,7 +1,11 @@
-<script>
+<script lang="ts">
+  import type { ActionData } from "./$types";
+
   import { page } from "$app/stores";
   import "$lib/assets/styles/global.css";
   import Confirmation from "$lib/components/dropdown/confirmation.svelte";
+
+  export let form: ActionData;
 </script>
 
 <section class="form">
@@ -18,7 +22,6 @@
           <div class="circle"><img src="/icons/truck-white.svg" alt="" /></div>
         </div>
       </div>
-
     </div>
 
     <div class="waitlist-group">
@@ -29,7 +32,11 @@
         </div>
       </div>
 
-      <form action="/api" method="post">
+      <form method="post">
+        {#if form?.missing}
+          <p>missing email address</p>
+        {/if}
+
         {#if $page.params.slug == "individual"}
           <h1>Individual dispatcher form</h1>
           <p>Name</p>
@@ -81,8 +88,6 @@
         <button class="submit"> Join waitlist </button>
       </form>
     </div>
-
-
   </section>
 </section>
 
@@ -119,42 +124,42 @@
     <div class="location">
       <select name="state" id="state">
         <!-- <option value="" disabled selected>State</option> -->
-        <option value="Abia"></option>
-        <option value="Adamawa"></option>
-        <option value="Akwa Ibom"></option>
-        <option value="Anambra"></option>
-        <option value="Bauchi"></option>
-        <option value="Bayelsa"></option>
-        <option value="Benue"></option>
-        <option value="Borno"></option>
-        <option value="Cross River"></option>
-        <option value="Delta"></option>
-        <option value="Ebonyi"></option>
-        <option value="Edo"></option>
-        <option value="Ekiti"></option>
-        <option value="Enugu"></option>
-        <option value="Gombe"></option>
-        <option value="Imo"></option>
-        <option value="Jigawa"></option>
-        <option value="Kaduna"></option>
-        <option value="Kano"></option>
-        <option value="Katsina"></option>
-        <option value="Kebbi"></option>
-        <option value="Kogi"></option>
-        <option value="Kwara"></option>
-        <option value="Lagos"></option>
-        <option value="Nasarawa"></option>
-        <option value="Niger"></option>
-        <option value="Ogun"></option>
-        <option value="Ondo"></option>
-        <option value="Osun"></option>
-        <option value="Oyo"></option>
-        <option value="Plateau"></option>
-        <option value="Rivers"></option>
-        <option value="Sokoto"></option>
-        <option value="Taraba"></option>
-        <option value="Yobe"></option>
-        <option value="Zamfara"></option>
+        <option value="Abia" />
+        <option value="Adamawa" />
+        <option value="Akwa Ibom" />
+        <option value="Anambra" />
+        <option value="Bauchi" />
+        <option value="Bayelsa" />
+        <option value="Benue" />
+        <option value="Borno" />
+        <option value="Cross River" />
+        <option value="Delta" />
+        <option value="Ebonyi" />
+        <option value="Edo" />
+        <option value="Ekiti" />
+        <option value="Enugu" />
+        <option value="Gombe" />
+        <option value="Imo" />
+        <option value="Jigawa" />
+        <option value="Kaduna" />
+        <option value="Kano" />
+        <option value="Katsina" />
+        <option value="Kebbi" />
+        <option value="Kogi" />
+        <option value="Kwara" />
+        <option value="Lagos" />
+        <option value="Nasarawa" />
+        <option value="Niger" />
+        <option value="Ogun" />
+        <option value="Ondo" />
+        <option value="Osun" />
+        <option value="Oyo" />
+        <option value="Plateau" />
+        <option value="Rivers" />
+        <option value="Sokoto" />
+        <option value="Taraba" />
+        <option value="Yobe" />
+        <option value="Zamfara" />
       </select>
       <div>Edo</div>
     </div>
@@ -184,9 +189,8 @@
   </form>
 </div>
 
-
 <div class="confirmation">
-    <Confirmation />
+  <Confirmation />
 </div>
 
 <style>
@@ -473,25 +477,23 @@
       margin-top: 12px;
       margin-bottom: 22px;
     }
-    
   }
 
-
-@media (max-width: 767px) {
-  .confirmation {
+  @media (max-width: 767px) {
+    .confirmation {
       position: absolute;
       width: 100%;
       height: 100%;
       background: #451297;
       top: 0;
       left: 0;
-}
-}
+    }
+  }
 
-@media (min-width: 768px) and (max-width: 1110px){
-  .confirmation {
+  @media (min-width: 768px) and (max-width: 1110px) {
+    .confirmation {
       top: 150px;
       left: 20%;
-}
-}
+    }
+  }
 </style>
