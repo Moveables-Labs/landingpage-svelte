@@ -71,7 +71,7 @@
         </div>
       </div>
 
-      <form action="/api" method="post">
+      <form method="post">
         {#if $page.params.slug == "individual"}
           <h1>Individual dispatcher form</h1>
           <label for="name">Name</label>
@@ -151,9 +151,7 @@
 </section>
 
 {#if form?.success}
-  <div class="confirmation">
-    <Confirmation />
-  </div>
+  <Confirmation />
 {/if}
 
 <style>
@@ -362,18 +360,6 @@
     transition: ease-in-out 200ms;
   }
 
-  .confirmation {
-    position: absolute;
-    margin: auto;
-    display: flex;
-    width: 480px;
-    height: 470px;
-    background: rgba(199, 161, 249, 0.8);
-    backdrop-filter: blur(20px);
-    top: 20%;
-    left: 30%;
-  }
-
   @media (max-width: 1110px) {
     .form {
       background: #fff;
@@ -435,24 +421,6 @@
       margin: 0 auto;
       margin-top: 12px;
       margin-bottom: 22px;
-    }
-  }
-
-  @media (max-width: 767px) {
-    .confirmation {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: #451297;
-      top: 0;
-      left: 0;
-    }
-  }
-
-  @media (min-width: 768px) and (max-width: 1110px) {
-    .confirmation {
-      top: 150px;
-      left: 20%;
     }
   }
 </style>

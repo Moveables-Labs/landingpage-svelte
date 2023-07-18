@@ -48,7 +48,6 @@ export const load: PageServerLoad = async () => {
             });
           });
 
-          console.log(articles);
           fulfil(articles);
         })
         .catch((err) => {
