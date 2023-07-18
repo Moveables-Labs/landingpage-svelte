@@ -66,10 +66,18 @@
     <div class="waitlist-group mobile">
       <div class="go-back">
         <div>
-          <img src="/icons/backspace-icon.svg" alt="" />
-          <a href="/">Go back</a>
+          <a href="/">
+            <img src="/icons/backspace-icon.svg" alt="" />
+            Go back</a
+          >
         </div>
       </div>
+
+      {#if form?.missing}
+        <p>email is missing</p>
+      {:else if form?.error}
+        <p>{form?.message}</p>
+      {/if}
 
       <form method="post">
         {#if $page.params.slug == "individual"}

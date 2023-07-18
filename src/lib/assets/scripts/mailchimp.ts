@@ -48,20 +48,22 @@ export const ping = (apiKey: string) => {
 export const add_to_audience = (apiKey: string, body: body) => {
   const url = "https://" + server + base_url + "/lists/" + listId + "/members";
 
-  return new Promise((resolve, reject) => {
-    superagent
-      .default("POST", url)
-      .auth("user", apiKey)
-      .type("application/json")
-      .accept("application/json")
-      .send(body)
-      .then((res) => {
-        const result = { data: res.body, response: res, status: res.status };
-        resolve(result);
-      })
-      .catch((err) => {
-        console.log(err);
-        reject(err);
-      });
-  });
+  return new Promise<{ data: any; response: any; status: number }>(
+    (resolve, reject) => {
+      superagent
+        .default("POST", url)
+        .auth("user", apiKey)
+        .type("application/json")
+        .accept("application/json")
+        .send(body)
+        .then((res) => {
+          const result = { data: res.body, response: res, status: res.status };
+          resolve(result);
+        })
+        .catch((err) => {
+          console.log(err);
+          reject(err);
+        });
+    }
+  );
 };

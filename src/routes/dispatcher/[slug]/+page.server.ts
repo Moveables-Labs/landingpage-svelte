@@ -35,15 +35,21 @@ export const actions: Actions = {
       },
     };
 
-    const res: any = await add_to_audience(apiKey, body);
+    try {
+      const res = await add_to_audience(apiKey, body);
 
-    if (res.status != 200) {
-      return fail(res.status, {
+      if (res.status != 200) {
+        return fail(res.status, {
+          error: true,
+          message: `something went wrong fulfilling your request: ${res.data.detail}`,
+        });
+      }
+      return { success: true };
+    } catch (err) {
+      return fail(400, {
         error: true,
-        message: `something went wrong fulfilling your request: ${res.body.detail}`,
+        message: `something went wrong fulfilling your request`,
       });
     }
-
-    return { success: true };
   },
 };
