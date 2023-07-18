@@ -5,6 +5,45 @@
   import "$lib/assets/styles/global.css";
   import Confirmation from "$lib/components/dropdown/confirmation.svelte";
 
+  const states = [
+    "Abia",
+    "Adamawa",
+    "Akwa Ibom",
+    "Anambra",
+    "Bauchi",
+    "Bayelsa",
+    "Benue",
+    "Borno",
+    "Cross River",
+    "Delta",
+    "Ebonyi",
+    "Edo",
+    "Ekiti",
+    "Enugu",
+    "Gombe",
+    "Imo",
+    "Jigawa",
+    "Kaduna",
+    "Kano",
+    "Katsina",
+    "Kebbi",
+    "Kogi",
+    "Kwara",
+    "Lagos",
+    "Nasarawa",
+    "Niger",
+    "Ogun",
+    "Ondo",
+    "Osun",
+    "Oyo",
+    "Plateau",
+    "Rivers",
+    "Sokoto",
+    "Taraba",
+    "Yobe",
+    "Zamfara",
+  ];
+
   export let form: ActionData;
 </script>
 
@@ -24,7 +63,7 @@
       </div>
     </div>
 
-    <div class="waitlist-group">
+    <div class="waitlist-group mobile">
       <div class="go-back">
         <div>
           <img src="/icons/backspace-icon.svg" alt="" />
@@ -32,36 +71,54 @@
         </div>
       </div>
 
-      <form method="post">
-        {#if form?.missing}
-          <p>missing email address</p>
-        {:else if form?.error}
-          <p>{form?.message}</p>
-        {/if}
-
+      <form action="/api" method="post">
         {#if $page.params.slug == "individual"}
           <h1>Individual dispatcher form</h1>
-          <p>Name</p>
-          <input type="text" name="name" id="name" placeholder="Name" />
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            required
+          />
         {:else}
           <h1>Company's dispatch form</h1>
-          <p>Company's Name</p>
-          <input type="text" name="company" id="company" placeholder="Name" />
+          <label for="company">Company's Name</label>
+          <input
+            type="text"
+            name="company"
+            id="company"
+            placeholder="Name LTD"
+            required
+          />
         {/if}
 
-        <p>Phone no.</p>
-        <input type="tel" name="tel" id="tel" placeholder="+234" />
-        <p>Email</p>
+        <label for="tel">Phone no.</label>
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          placeholder="+234"
+          minlength="11"
+          maxlength="14"
+          required
+        />
+        <label for="email">Email</label>
         <input
           type="email"
           name="email"
           id="email"
           placeholder="example@gmail.com"
+          required
         />
-        <p>State</p>
+        <label for="state">State</label>
         <div class="location">
           <select name="state" id="state">
-            <option value="" disabled selected>State</option>
+            <!-- <option value="" disabled selected>State</option> -->
+            {#each states as state}
+              <option value={state}>{state}</option>
+            {/each}
           </select>
           <div>Edo</div>
         </div>
@@ -75,125 +132,29 @@
         <div class="delivery">
           <p>Delivery method</p>
           <div class="delivery-icons">
-            <button class="delivery-buttons"
+            <button class="delivery-buttons" type="button"
               ><img src="/icons/bike-delivery.svg" alt="" /></button
             >
-            <button class="delivery-buttons"
+            <button class="delivery-buttons" type="button"
               ><img src="/icons/car-delivery.svg" alt="" class="irr" /></button
             >
-            <button class="delivery-buttons"
+            <button class="delivery-buttons" type="button"
               ><img src="/icons/keke-delivery.svg" alt="" class="irr" /></button
             >
           </div>
         </div>
 
-        <button class="submit"> Join waitlist </button>
+        <button class="submit" type="submit"> Join waitlist </button>
       </form>
     </div>
   </section>
 </section>
 
-<!--Mobile view-->
-<div class="waitlist-group mobile">
-  <div class="go-back">
-    <div>
-      <img src="/icons/backspace-icon.svg" alt="" />
-      <a href="/">Go back</a>
-    </div>
+{#if form?.success}
+  <div class="confirmation">
+    <Confirmation />
   </div>
-
-  <form action="/api" method="post">
-    {#if $page.params.slug == "individual"}
-      <h1>Individual dispatcher form</h1>
-      <p>Name</p>
-      <input type="text" name="name" id="name" placeholder="Name" />
-    {:else}
-      <h1>Company's dispatch form</h1>
-      <p>Company's Name</p>
-      <input type="text" name="company" id="company" placeholder="Name" />
-    {/if}
-
-    <p>Phone no.</p>
-    <input type="tel" name="tel" id="tel" placeholder="+234" />
-    <p>Email</p>
-    <input
-      type="email"
-      name="email"
-      id="email"
-      placeholder="example@gmail.com"
-    />
-    <p>State</p>
-    <div class="location">
-      <select name="state" id="state">
-        <!-- <option value="" disabled selected>State</option> -->
-        <option value="Abia" />
-        <option value="Adamawa" />
-        <option value="Akwa Ibom" />
-        <option value="Anambra" />
-        <option value="Bauchi" />
-        <option value="Bayelsa" />
-        <option value="Benue" />
-        <option value="Borno" />
-        <option value="Cross River" />
-        <option value="Delta" />
-        <option value="Ebonyi" />
-        <option value="Edo" />
-        <option value="Ekiti" />
-        <option value="Enugu" />
-        <option value="Gombe" />
-        <option value="Imo" />
-        <option value="Jigawa" />
-        <option value="Kaduna" />
-        <option value="Kano" />
-        <option value="Katsina" />
-        <option value="Kebbi" />
-        <option value="Kogi" />
-        <option value="Kwara" />
-        <option value="Lagos" />
-        <option value="Nasarawa" />
-        <option value="Niger" />
-        <option value="Ogun" />
-        <option value="Ondo" />
-        <option value="Osun" />
-        <option value="Oyo" />
-        <option value="Plateau" />
-        <option value="Rivers" />
-        <option value="Sokoto" />
-        <option value="Taraba" />
-        <option value="Yobe" />
-        <option value="Zamfara" />
-      </select>
-      <div>Edo</div>
-    </div>
-
-    {#if $page.params.slug == "individual"}
-      <input type="text" name="tag" value="Individual" hidden />
-    {:else}
-      <input type="text" name="tag" value="Company" hidden />
-    {/if}
-
-    <div class="delivery">
-      <p>Delivery method</p>
-      <div class="delivery-icons">
-        <button class="delivery-buttons"
-          ><img src="/icons/bike-delivery.svg" alt="" /></button
-        >
-        <button class="delivery-buttons"
-          ><img src="/icons/car-delivery.svg" alt="" class="irr" /></button
-        >
-        <button class="delivery-buttons"
-          ><img src="/icons/keke-delivery.svg" alt="" class="irr" /></button
-        >
-      </div>
-    </div>
-
-    <button class="submit"> Join waitlist </button>
-  </form>
-</div>
-
-<div class="confirmation">
-  <Confirmation />
-</div>
+{/if}
 
 <style>
   .form {
@@ -401,10 +362,6 @@
     transition: ease-in-out 200ms;
   }
 
-  .mobile {
-    display: none;
-  }
-
   .confirmation {
     position: absolute;
     margin: auto;
@@ -427,7 +384,7 @@
       width: 100% !important;
       height: 100%;
       margin: 0px auto !important;
-      padding: 0rem 2rem;
+      padding: 0rem 0.5rem;
     }
 
     form h1 {
@@ -450,7 +407,7 @@
       width: 100% !important;
     }
 
-    section {
+    .content {
       display: none !important;
     }
 

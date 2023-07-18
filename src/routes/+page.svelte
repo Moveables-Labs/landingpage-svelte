@@ -40,7 +40,7 @@
 </section>
 
 <section class="blog">
-  <Blog articles={data.articles} />
+  <Blog data={data.articles} />
 </section>
 
 <section class="footer">
@@ -98,7 +98,6 @@
   }
 
   @media (max-width: 376px) {
-    
     .hero {
       height: 100% !important;
     }
@@ -108,12 +107,11 @@
   }
 
   @media (max-width: 1110px) {
-    
     section {
       padding: 1rem !important;
     }
 
-    .header{
+    .header {
       padding: 1rem;
       padding-top: 1.2rem !important;
     }
