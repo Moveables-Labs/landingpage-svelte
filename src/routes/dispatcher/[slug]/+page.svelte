@@ -126,8 +126,8 @@
     <div class="location">
       <select name="state" id="state">
         <!-- <option value="" disabled selected>State</option> -->
-        <option value="Abia" />
-        <option value="Adamawa" />
+        <option value="Abia">Abia</option>
+        <option value="Adamawa">Adamawa</option>
         <option value="Akwa Ibom" />
         <option value="Anambra" />
         <option value="Bauchi" />
