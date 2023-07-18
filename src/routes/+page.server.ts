@@ -11,9 +11,11 @@ import {
 import { MOVEABLES_MAILCHIMP_KEY } from "$env/static/private";
 import type { Actions, PageServerLoad } from "./$types";
 
+type Article = { title: string; src: string; img: string };
+
 export const load: PageServerLoad = async () => {
   return {
-    articles: new Promise((resolve, reject) => {
+    articles: new Promise<Article[] | string>((fulfil, reject) => {
       superagent.default
         .get("http://emqx.medium.com/feed")
         .then((response) => response.text)
@@ -22,7 +24,7 @@ export const load: PageServerLoad = async () => {
             new jsdom.JSDOM(data, { contentType: "text/xml" }).window.document
         )
         .then((doc) => {
-          let articles: { title: string; src: string; img: string }[] = [];
+          let articles: Article[] = [];
 
           const items = doc.querySelectorAll("item");
           items.forEach((el) => {
@@ -46,11 +48,11 @@ export const load: PageServerLoad = async () => {
             });
           });
 
-          console.log(articles);
-          resolve(articles);
+          fulfil(articles);
         })
         .catch((err) => {
-          reject(err);
+          console.log(err);
+          fulfil(`error loading content: ${err}`);
         });
     }),
   };

@@ -5,6 +5,45 @@
   import "$lib/assets/styles/global.css";
   import Confirmation from "$lib/components/dropdown/confirmation.svelte";
 
+  const states = [
+    "Abia",
+    "Adamawa",
+    "Akwa Ibom",
+    "Anambra",
+    "Bauchi",
+    "Bayelsa",
+    "Benue",
+    "Borno",
+    "Cross River",
+    "Delta",
+    "Ebonyi",
+    "Edo",
+    "Ekiti",
+    "Enugu",
+    "Gombe",
+    "Imo",
+    "Jigawa",
+    "Kaduna",
+    "Kano",
+    "Katsina",
+    "Kebbi",
+    "Kogi",
+    "Kwara",
+    "Lagos",
+    "Nasarawa",
+    "Niger",
+    "Ogun",
+    "Ondo",
+    "Osun",
+    "Oyo",
+    "Plateau",
+    "Rivers",
+    "Sokoto",
+    "Taraba",
+    "Yobe",
+    "Zamfara",
+  ];
+
   export let form: ActionData;
 </script>
 
@@ -24,7 +63,7 @@
       </div>
     </div>
 
-    <div class="waitlist-group">
+    <div class="waitlist-group mobile">
       <div class="go-back">
         <div>
           <img src="/icons/backspace-icon.svg" alt="" />
@@ -33,35 +72,53 @@
       </div>
 
       <form method="post">
-        {#if form?.missing}
-          <p>missing email address</p>
-        {:else if form?.error}
-          <p>{form?.message}</p>
-        {/if}
-
         {#if $page.params.slug == "individual"}
           <h1>Individual dispatcher form</h1>
-          <p>Name</p>
-          <input type="text" name="name" id="name" placeholder="Name" />
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            required
+          />
         {:else}
           <h1>Company's dispatch form</h1>
-          <p>Company's Name</p>
-          <input type="text" name="company" id="company" placeholder="Name" />
+          <label for="company">Company's Name</label>
+          <input
+            type="text"
+            name="company"
+            id="company"
+            placeholder="Name LTD"
+            required
+          />
         {/if}
 
-        <p>Phone no.</p>
-        <input type="tel" name="tel" id="tel" placeholder="+234" />
-        <p>Email</p>
+        <label for="tel">Phone no.</label>
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          placeholder="+234"
+          minlength="11"
+          maxlength="14"
+          required
+        />
+        <label for="email">Email</label>
         <input
           type="email"
           name="email"
           id="email"
           placeholder="example@gmail.com"
+          required
         />
-        <p>State</p>
+        <label for="state">State</label>
         <div class="location">
           <select name="state" id="state">
-            <option value="" disabled selected>State</option>
+            <!-- <option value="" disabled selected>State</option> -->
+            {#each states as state}
+              <option value={state}>{state}</option>
+            {/each}
           </select>
           <div>Edo</div>
         </div>
@@ -74,126 +131,31 @@
 
         <div class="delivery">
           <p>Delivery method</p>
-          <div class="delivery-icons">
-            <button class="delivery-buttons"
-              ><img src="/icons/bike-delivery.svg" alt="" /></button
-            >
-            <button class="delivery-buttons"
-              ><img src="/icons/car-delivery.svg" alt="" class="irr" /></button
-            >
-            <button class="delivery-buttons"
-              ><img src="/icons/keke-delivery.svg" alt="" class="irr" /></button
-            >
-          </div>
+          <ul>
+            <li>
+              <input type="checkbox" id="myCheckbox1" />
+              <label for="myCheckbox1" class="checkbox"><img src="/icons/bike-delivery.svg" alt="Scooter"/></label>
+            </li>
+            <li>
+              <input type="checkbox" id="myCheckbox2" />
+              <label for="myCheckbox2" class="checkbox"><img src="/icons/car-delivery.svg"  alt="Car"/></label>
+            </li>
+            <li>
+              <input type="checkbox" id="myCheckbox3" />
+              <label for="myCheckbox3" class="checkbox"><img src="/icons/keke-delivery.svg" alt="Keke"/></label>
+            </li>
+          </ul>
         </div>
 
-        <button class="submit"> Join waitlist </button>
+        <button class="submit" type="submit"> Join waitlist </button>
       </form>
     </div>
   </section>
 </section>
 
-<!--Mobile view-->
-<div class="waitlist-group mobile">
-  <div class="go-back">
-    <div>
-      <img src="/icons/backspace-icon.svg" alt="" />
-      <a href="/">Go back</a>
-    </div>
-  </div>
-
-  <form action="/api" method="post">
-    {#if $page.params.slug == "individual"}
-      <h1>Individual dispatcher form</h1>
-      <p>Name</p>
-      <input type="text" name="name" id="name" placeholder="Name" />
-    {:else}
-      <h1>Company's dispatch form</h1>
-      <p>Company's Name</p>
-      <input type="text" name="company" id="company" placeholder="Name" />
-    {/if}
-
-    <p>Phone no.</p>
-    <input type="tel" name="tel" id="tel" placeholder="+234" />
-    <p>Email</p>
-    <input
-      type="email"
-      name="email"
-      id="email"
-      placeholder="example@gmail.com"
-    />
-    <p>State</p>
-    <div class="location">
-      <select name="state" id="state">
-        <!-- <option value="" disabled selected>State</option> -->
-        <option value="Abia">Abia</option>
-        <option value="Adamawa">Adamawa</option>
-        <option value="Akwa Ibom" />
-        <option value="Anambra" />
-        <option value="Bauchi" />
-        <option value="Bayelsa" />
-        <option value="Benue" />
-        <option value="Borno" />
-        <option value="Cross River" />
-        <option value="Delta" />
-        <option value="Ebonyi" />
-        <option value="Edo" />
-        <option value="Ekiti" />
-        <option value="Enugu" />
-        <option value="Gombe" />
-        <option value="Imo" />
-        <option value="Jigawa" />
-        <option value="Kaduna" />
-        <option value="Kano" />
-        <option value="Katsina" />
-        <option value="Kebbi" />
-        <option value="Kogi" />
-        <option value="Kwara" />
-        <option value="Lagos" />
-        <option value="Nasarawa" />
-        <option value="Niger" />
-        <option value="Ogun" />
-        <option value="Ondo" />
-        <option value="Osun" />
-        <option value="Oyo" />
-        <option value="Plateau" />
-        <option value="Rivers" />
-        <option value="Sokoto" />
-        <option value="Taraba" />
-        <option value="Yobe" />
-        <option value="Zamfara" />
-      </select>
-      <div>Edo</div>
-    </div>
-
-    {#if $page.params.slug == "individual"}
-      <input type="text" name="tag" value="Individual" hidden />
-    {:else}
-      <input type="text" name="tag" value="Company" hidden />
-    {/if}
-
-    <div class="delivery">
-      <p>Delivery method</p>
-      <div class="delivery-icons">
-        <button class="delivery-buttons"
-          ><img src="/icons/bike-delivery.svg" alt="" /></button
-        >
-        <button class="delivery-buttons"
-          ><img src="/icons/car-delivery.svg" alt="" class="irr" /></button
-        >
-        <button class="delivery-buttons"
-          ><img src="/icons/keke-delivery.svg" alt="" class="irr" /></button
-        >
-      </div>
-    </div>
-
-    <button class="submit"> Join waitlist </button>
-  </form>
-</div>
-
-<div class="confirmation">
+{#if form?.success}
   <Confirmation />
-</div>
+{/if}
 
 <style>
   .form {
@@ -339,45 +301,6 @@
     padding: 1rem 2.2rem;
   }
 
-  .delivery-icons {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5px;
-    width: 100%;
-    gap: 40px;
-  }
-
-  .delivery-buttons {
-    outline: none;
-    border: none;
-    background: none;
-    cursor: pointer;
-    padding-bottom: -2%;
-    border-radius: 10.336px;
-    border: 0.738px solid #c8c8c8;
-    background: #f5f5f5;
-  }
-
-  .delivery-buttons:hover {
-    border: 1px solid #711df9;
-    border-radius: 10.336px;
-    transform: scale(1.1);
-    transition: transform ease-in 400ms;
-  }
-
-  .delivery-buttons:active,
-  .delivery-buttons:focus {
-    border: 1px solid #711df9;
-  }
-
-  .delivery-icons img {
-    padding: 0px 25px;
-  }
-
-  .irr {
-    padding: 15px 30px !important;
-  }
-
   .submit {
     width: 100%;
     padding: 0.94rem 1.2rem;
@@ -401,20 +324,69 @@
     transition: ease-in-out 200ms;
   }
 
-  .mobile {
+  ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 2.2rem;
+  margin: auto;
+  padding-top: 0.5rem;
+  }
+
+  input[type="checkbox"][id^="myCheckbox"] {
     display: none;
   }
 
-  .confirmation {
-    position: absolute;
+  .checkbox {
+    border: 1px solid #fff;
+    padding: 10px 18px;
     margin: auto;
-    display: flex;
-    width: 480px;
-    height: 470px;
-    background: rgba(199, 161, 249, 0.8);
-    backdrop-filter: blur(20px);
-    top: 20%;
-    left: 30%;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    background: #ECECEC;
+    border-radius: 0.646rem;
+  }
+
+  .checkbox:before {
+    background-color: white;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border: 1px solid grey;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+  }
+
+  .checkbox img {
+    height: 60px;
+    width: 65px;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+  }
+
+  :checked + .checkbox {
+    border-color: #ddd;
+  }
+
+  :checked + .checkbox:before {
+    content: "✓";
+    background-color: #711df9;
+    transform: scale(1);
+  }
+
+  :checked + .checkbox img {
+    transform: scale(0.9);
+    /* box-shadow: 0 0 5px #333; */
+    z-index: -1;
   }
 
   @media (max-width: 1110px) {
@@ -427,7 +399,7 @@
       width: 100% !important;
       height: 100%;
       margin: 0px auto !important;
-      padding: 0rem 2rem;
+      padding: 0rem 0.5rem;
     }
 
     form h1 {
@@ -450,26 +422,8 @@
       width: 100% !important;
     }
 
-    section {
+    .content {
       display: none !important;
-    }
-
-    .delivery-icons {
-      margin: auto;
-      justify-content: center;
-      gap: 2rem;
-      padding-top: 10px;
-    }
-
-    .delivery-buttons:hover {
-      transform: none;
-    }
-
-    .delivery-icons img {
-      padding: 0px 17px;
-    }
-    .irr {
-      padding: 15px 22px !important;
     }
 
     .submit {
@@ -479,23 +433,30 @@
       margin-top: 12px;
       margin-bottom: 22px;
     }
-  }
 
-  @media (max-width: 767px) {
-    .confirmation {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: #451297;
-      top: 0;
-      left: 0;
+    ul{
+      gap: 1.1rem;
+    }
+
+    /* .checkbox{
+      width: 50px;
+      height: 50px;
+    } */
+
+    .checkbox img{
+      width: 50px;
+      height: 50px;
     }
   }
 
-  @media (min-width: 768px) and (max-width: 1110px) {
-    .confirmation {
-      top: 150px;
-      left: 20%;
+  @media (max-width: 320px){
+    .checkbox img{
+      width: 35px;
+      height: 35px;
+    }
+
+    ul{
+      gap: 0.8rem;
     }
   }
 </style>

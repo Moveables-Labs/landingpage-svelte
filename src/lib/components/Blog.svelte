@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let articles: Promise<any>;
+  export let data: any;
 </script>
 
 <section>
@@ -8,18 +8,24 @@
   </div>
 
   <div class="container">
-    {#await articles then data}
-      {#each data as article}
-        <!-- the image of the article can be accessed with {article.img} -->
-        <div class="blog1">
-          <div class="content">
-            <p>{article.title}</p>
-            <a href={article.src}>Read More</a>
+    {#await data}
+      <p>loading...</p>
+    {:then data}
+      {#if typeof data === "string"}
+        <p>{data}</p>
+      {:else}
+        {#each data as article}
+          <!-- the image of the article can be accessed with {article.img} -->
+          <div class="blog1">
+            <div class="content">
+              <p>{article.title}</p>
+              <a href={article.src}>Read More</a>
+            </div>
           </div>
-        </div>
-      {/each}
-    {:catch error}
-      <p>{error}</p>
+        {/each}
+      {/if}
+    {:catch err}
+      <p>{err}</p>
     {/await}
 
     <div />
