@@ -74,7 +74,7 @@
       </div>
 
       {#if form?.missing}
-        <p>email is missing</p>
+        <p>Please complete the form</p>
       {:else if form?.error}
         <p>{form?.message}</p>
       {/if}

@@ -41,14 +41,14 @@ export const actions: Actions = {
       if (res.status != 200) {
         return fail(res.status, {
           error: true,
-          message: `something went wrong fulfilling your request: ${res.data.detail}`,
+          message: `Something went wrong fulfilling your request: ${res.data.detail}`,
         });
       }
       return { success: true };
     } catch (err) {
       return fail(400, {
         error: true,
-        message: `something went wrong fulfilling your request`,
+        message: `Something went wrong fulfilling your request`,
       });
     }
   },
