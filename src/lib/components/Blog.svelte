@@ -61,7 +61,7 @@
     grid-template-rows: 1fr;
     gap: 1.4rem;
     width: 100%;
-    min-height: 40vh;
+    height: 100%;
     margin-top: 4%;
   }
 
