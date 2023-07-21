@@ -186,8 +186,8 @@ section{
 }
 
 .irr img{
-    height: 22.5rem;
-    margin-top: -2%;
+    height: 22.45rem;
+    margin-top: -1%;
 }
 
 .card-content{
@@ -273,6 +273,10 @@ section{
         letter-spacing: 1px;
     }
 
+    .card-mob img{
+        height: 98%;
+    }
+
     .card-content-title img{
     width: 35px;
     height: 35px;
@@ -304,8 +308,9 @@ section{
     }
 
     .irr img{
-        width: 17.42rem;
-        margin-left: -0.42rem;
+        width: 17.44rem;
+        height: 100%;
+        margin-left: -0.39rem;
     }
 
     .slider{
