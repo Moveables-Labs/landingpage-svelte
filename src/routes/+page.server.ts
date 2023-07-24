@@ -17,7 +17,7 @@ export const load: PageServerLoad = async () => {
   return {
     articles: new Promise<Article[] | string>((fulfil, reject) => {
       superagent.default
-        .get("http://emqx.medium.com/feed")
+        .get("https://www.medium.com/@moveable.startup/feed")
         .then((response) => response.text)
         .then(
           (data) =>
@@ -76,15 +76,22 @@ export const actions: Actions = {
       ...defaultBody,
     };
 
-    const res: any = await add_to_audience(apiKey, body);
+    try {
+      const res = await add_to_audience(apiKey, body);
 
-    if (res.status != 200) {
-      return fail(res.status, {
+      if (res.status != 200) {
+        return fail(res.status, {
+          error: true,
+          message: `something went wrong fulfilling your request: ${res.data.detail}`,
+        });
+      }
+
+      return { success: true };
+    } catch (err) {
+      return fail(400, {
         error: true,
-        message: `something went wrong fulfilling your request: ${res.body.detail}`,
+        message: `something went wrong fulfilling your request`,
       });
     }
-
-    return { success: true };
   },
 };
