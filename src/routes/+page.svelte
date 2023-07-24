@@ -10,9 +10,17 @@
   import Waitlist from "$lib/components/Waitlist.svelte";
   import Blog from "$lib/components/Blog.svelte";
   import Footer from "$lib/components/Footer.svelte";
+  import type { Article } from "$lib/assets/scripts/custom_types";
 
   export let data: PageData;
   export let form: ActionData;
+
+  let articles: Article[] = [];
+  if (typeof data.articles !== "string") {
+    articles = data.articles;
+  } else {
+    console.log(data.articles);
+  }
 </script>
 
 <section class="header">
@@ -40,11 +48,11 @@
 </section>
 
 <section class="blog">
-  <Blog data={data.articles} />
+  <Blog {articles} />
 </section>
 
 <section class="footer">
-  <Footer />
+  <Footer {articles} />
 </section>
 
 <style>

@@ -1,5 +1,7 @@
 <script lang="ts">
-  export let data: any;
+  import type { Article } from "$lib/assets/scripts/custom_types";
+
+  export let articles: Article[];
 </script>
 
 <section>
@@ -8,25 +10,23 @@
   </div>
 
   <div class="container">
-    {#await data}
-      <p>loading...</p>
-    {:then data}
-      {#if typeof data === "string"}
-        <p>{data}</p>
-      {:else}
-        {#each data as article}
-          <!-- the image of the article can be accessed with {article.img} -->
-          <div class="blog1">
-            <div class="content">
-              <p>{article.title}</p>
-              <a href={article.src}>Read More</a>
-            </div>
-          </div>
-        {/each}
-      {/if}
-    {:catch err}
-      <p>{err}</p>
-    {/await}
+    {#each articles as article}
+      <!-- the image of the article can be accessed with {article.img} -->
+      <div
+        class="blog"
+        style="background-image:  linear-gradient( 
+          rgba(10,10,10,.5), 
+          rgba(255,255,255,.8) 
+          ),url('{article.img}');"
+      >
+        <div class="content">
+          <p>{article.title}</p>
+          <a href={article.src}>Read More</a>
+        </div>
+      </div>
+    {:else}
+      <p>Nothing to see here</p>
+    {/each}
 
     <div />
     <div />
@@ -65,13 +65,7 @@
     margin-top: 4%;
   }
 
-  .blog1 {
-    background: linear-gradient(
-        180deg,
-        rgba(199, 161, 249, 0) 1.56%,
-        #c7a1f9 96.88%
-      ),
-      url("/images/blog1.jpg");
+  .blog {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

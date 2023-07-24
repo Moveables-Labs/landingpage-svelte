@@ -1,28 +1,5 @@
 import * as superagent from "superagent";
-
-export type body = {
-  email_address: string;
-  status: string;
-  tags: string[];
-  merge_fields: any;
-};
-
-export const defaultBody = {
-  status: "subscribed",
-  tags: ["USER"],
-  merge_fields: {
-    NAME: "NONE",
-    PHONE: "NONE",
-    COMPANY: "NONE",
-    DTYPE: "NONE",
-    ADDRESS: {
-      addr1: "NONE",
-      city: "NONE",
-      zip: "NONE",
-      state: "NONE",
-    },
-  },
-};
+import type { McApiPayload } from "./custom_types";
 
 const base_url = ".api.mailchimp.com/3.0";
 const listId = "8bbb43cca4";
@@ -45,7 +22,7 @@ export const ping = (apiKey: string) => {
   });
 };
 
-export const add_to_audience = (apiKey: string, body: body) => {
+export const add_to_audience = (apiKey: string, body: McApiPayload) => {
   const url = "https://" + server + base_url + "/lists/" + listId + "/members";
 
   return new Promise<{ data: any; response: any; status: number }>(

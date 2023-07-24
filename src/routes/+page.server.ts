@@ -3,19 +3,18 @@ import { error, fail, json, redirect } from "@sveltejs/kit";
 import * as superagent from "superagent";
 import * as jsdom from "jsdom";
 
-import {
-  add_to_audience,
-  defaultBody,
-  type body,
-} from "$lib/assets/scripts/mailchimp";
+import { add_to_audience } from "$lib/assets/scripts/mailchimp";
 import { MOVEABLES_MAILCHIMP_KEY } from "$env/static/private";
 import type { Actions, PageServerLoad } from "./$types";
-
-type Article = { title: string; src: string; img: string };
+import {
+  DefaultMcApiPayloadData,
+  type Article,
+  type McApiPayload,
+} from "$lib/assets/scripts/custom_types";
 
 export const load: PageServerLoad = async () => {
   return {
-    articles: new Promise<Article[] | string>((fulfil, reject) => {
+    articles: new Promise<Article[] | string>((resolve) => {
       superagent.default
         .get("https://www.medium.com/@moveable.startup/feed")
         .then((response) => response.text)
@@ -48,11 +47,11 @@ export const load: PageServerLoad = async () => {
             });
           });
 
-          fulfil(articles);
+          resolve(articles);
         })
         .catch((err) => {
           console.log(err);
-          fulfil(`error loading content: ${err}`);
+          resolve(`error loading content: ${err}`);
         });
     }),
   };
@@ -71,9 +70,9 @@ export const actions: Actions = {
       });
     }
 
-    const body: body = {
+    const body: McApiPayload = {
       email_address: String(email),
-      ...defaultBody,
+      ...DefaultMcApiPayloadData,
     };
 
     try {

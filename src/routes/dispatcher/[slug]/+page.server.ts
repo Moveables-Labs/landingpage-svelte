@@ -1,8 +1,9 @@
 import { error, fail, json, redirect } from "@sveltejs/kit";
 
-import { add_to_audience, type body } from "$lib/assets/scripts/mailchimp";
+import { add_to_audience } from "$lib/assets/scripts/mailchimp";
 import { MOVEABLES_MAILCHIMP_KEY } from "$env/static/private";
 import type { Actions } from "./$types";
+import type { McApiPayload } from "$lib/assets/scripts/custom_types";
 
 export const actions: Actions = {
   default: async ({ request }) => {
@@ -17,7 +18,7 @@ export const actions: Actions = {
       });
     }
 
-    const body: body = {
+    const body: McApiPayload = {
       email_address: String(email),
       status: "subscribed",
       tags: [data.get("tag")?.toString() || "USER"],
