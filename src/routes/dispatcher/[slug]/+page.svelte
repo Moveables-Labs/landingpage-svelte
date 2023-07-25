@@ -20,6 +20,7 @@
     "Edo",
     "Ekiti",
     "Enugu",
+    "FCT",
     "Gombe",
     "Imo",
     "Jigawa",
@@ -128,7 +129,6 @@
               <option value={state}>{state}</option>
             {/each}
           </select>
-          <div>Edo</div>
         </div>
 
         {#if $page.params.slug == "individual"}

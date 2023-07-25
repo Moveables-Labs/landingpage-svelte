@@ -180,13 +180,13 @@ section{
 }
 
 .card img{
-    height: 22rem;
+    height: 100%;
     margin-left: -2%;
     justify-content: flex-start;
 }
 
 .irr img{
-    height: 22.45rem;
+    height: 102%;
     margin-top: -1%;
 }
 
