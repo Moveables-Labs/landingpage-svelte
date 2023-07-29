@@ -20,6 +20,8 @@
         <p>email is missing</p>
       {:else if form?.error}
         <p>{form?.message}</p>
+      {:else if form?.exists}
+        <p>email already exists</p>
       {/if}
       <p>Join waitlist for to access your go to delivery service</p>
       <div class="email">

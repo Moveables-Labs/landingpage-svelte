@@ -78,6 +78,8 @@
         <p>Please complete the form</p>
       {:else if form?.error}
         <p>{form?.message}</p>
+      {:else if form?.exists}
+        <p>email already exists</p>
       {/if}
 
       <form method="post">
@@ -142,15 +144,21 @@
           <ul>
             <li>
               <input type="checkbox" id="myCheckbox1" />
-              <label for="myCheckbox1" class="checkbox"><img src="/icons/bike-delivery.svg" alt="Scooter"/></label>
+              <label for="myCheckbox1" class="checkbox"
+                ><img src="/icons/bike-delivery.svg" alt="Scooter" /></label
+              >
             </li>
             <li>
               <input type="checkbox" id="myCheckbox2" />
-              <label for="myCheckbox2" class="checkbox"><img src="/icons/car-delivery.svg"  alt="Car"/></label>
+              <label for="myCheckbox2" class="checkbox"
+                ><img src="/icons/car-delivery.svg" alt="Car" /></label
+              >
             </li>
             <li>
               <input type="checkbox" id="myCheckbox3" />
-              <label for="myCheckbox3" class="checkbox"><img src="/icons/keke-delivery.svg" alt="Keke"/></label>
+              <label for="myCheckbox3" class="checkbox"
+                ><img src="/icons/keke-delivery.svg" alt="Keke" /></label
+              >
             </li>
           </ul>
         </div>
@@ -237,14 +245,14 @@
     margin-top: 45px;
   }
 
-  .customer {
-    position: absolute;
-    bottom: 4%;
-    left: -2%;
-    width: 75rem;
-    height: 48rem;
-    z-index: 0;
-  }
+  /* .customer { */
+  /*   position: absolute; */
+  /*   bottom: 4%; */
+  /*   left: -2%; */
+  /*   width: 75rem; */
+  /*   height: 48rem; */
+  /*   z-index: 0; */
+  /* } */
 
   .waitlist-group {
     display: flex;
@@ -333,12 +341,12 @@
   }
 
   ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  gap: 2.2rem;
-  margin: auto;
-  padding-top: 0.5rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2.2rem;
+    margin: auto;
+    padding-top: 0.5rem;
   }
 
   input[type="checkbox"][id^="myCheckbox"] {
@@ -352,7 +360,7 @@
     display: block;
     position: relative;
     cursor: pointer;
-    background: #ECECEC;
+    background: #ececec;
     border-radius: 0.646rem;
   }
 
@@ -442,7 +450,7 @@
       margin-bottom: 22px;
     }
 
-    ul{
+    ul {
       gap: 1.1rem;
     }
 
@@ -451,19 +459,19 @@
       height: 50px;
     } */
 
-    .checkbox img{
+    .checkbox img {
       width: 50px;
       height: 50px;
     }
   }
 
-  @media (max-width: 320px){
-    .checkbox img{
+  @media (max-width: 320px) {
+    .checkbox img {
       width: 35px;
       height: 35px;
     }
 
-    ul{
+    ul {
       gap: 0.8rem;
     }
   }

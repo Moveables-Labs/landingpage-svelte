@@ -1,5 +1,6 @@
 import * as superagent from "superagent";
 import type { McApiPayload } from "./custom_types";
+import md5 from "md5";
 
 const base_url = ".api.mailchimp.com/3.0";
 const listId = "8bbb43cca4";
@@ -43,4 +44,29 @@ export const add_to_audience = (apiKey: string, body: McApiPayload) => {
         });
     }
   );
+};
+
+export const check_member_exists = (apiKey: string, memberEmail: string) => {
+  const url = `https://${server}${base_url}/lists/${listId}/members/${md5(
+    memberEmail.toLowerCase()
+  )}`;
+
+  return new Promise<boolean>((resolve, reject) => {
+    superagent
+      .default("GET", url)
+      .auth("user", apiKey)
+      .type("application/json")
+      .accept("application/json")
+      .then((res) => {
+        resolve(true);
+      })
+      .catch((err) => {
+        console.log(err);
+        if (err.status === 404) {
+          resolve(false);
+        } else {
+          reject(err);
+        }
+      });
+  });
 };
