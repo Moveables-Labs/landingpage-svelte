@@ -1,61 +1,13 @@
-import { error, fail, json, redirect } from "@sveltejs/kit";
-
-import * as superagent from "superagent";
-import * as jsdom from "jsdom";
+import { fail } from "@sveltejs/kit";
 
 import { add_to_audience } from "$lib/assets/scripts/mailchimp";
 import { MOVEABLES_MAILCHIMP_KEY } from "$env/static/private";
-import type { Actions, PageServerLoad } from "./$types";
+
+import type { Actions } from "./$types";
 import {
   DefaultMcApiPayloadData,
-  type Article,
   type McApiPayload,
 } from "$lib/assets/scripts/custom_types";
-
-export const load: PageServerLoad = async () => {
-  return {
-    articles: new Promise<Article[] | string>((resolve) => {
-      superagent.default
-        .get("https://www.medium.com/@moveable.startup/feed")
-        .then((response) => response.text)
-        .then(
-          (data) =>
-            new jsdom.JSDOM(data, { contentType: "text/xml" }).window.document
-        )
-        .then((doc) => {
-          let articles: Article[] = [];
-
-          const items = doc.querySelectorAll("item");
-          items.forEach((el) => {
-            const link = el.querySelector("link");
-            const title = el.querySelector("title");
-
-            const content =
-              el.getElementsByTagNameNS("*", "encoded").item(0)?.textContent ||
-              "";
-            const contentDoc = new jsdom.JSDOM(content).window.document;
-
-            const coverImg = contentDoc
-              .querySelector("figure")
-              ?.querySelector("img")
-              ?.getAttribute("src");
-
-            articles.push({
-              title: title?.textContent || "",
-              src: link?.innerHTML || "",
-              img: coverImg || "",
-            });
-          });
-
-          resolve(articles);
-        })
-        .catch((err) => {
-          console.log(err);
-          resolve(`error loading content: ${err}`);
-        });
-    }),
-  };
-};
 
 export const actions: Actions = {
   default: async ({ request }) => {

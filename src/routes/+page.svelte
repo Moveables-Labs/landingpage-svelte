@@ -2,18 +2,16 @@
   import type { ActionData, PageData } from "./$types";
 
   import "$lib/assets/styles/global.css";
-  import Header from "$lib/components/Header.svelte";
   import Hero from "$lib/components/Hero.svelte";
   import Services from "$lib/components/Services.svelte";
   import Steps from "$lib/components/Steps.svelte";
   import Features from "$lib/components/Features.svelte";
   import Waitlist from "$lib/components/Waitlist.svelte";
   import Blog from "$lib/components/Blog.svelte";
-  import Footer from "$lib/components/Footer.svelte";
   import type { Article } from "$lib/assets/scripts/custom_types";
 
-  export let data: PageData;
   export let form: ActionData;
+  export let data: PageData;
 
   let articles: Article[] = [];
   if (typeof data.articles !== "string") {
@@ -22,10 +20,6 @@
     console.log(data.articles);
   }
 </script>
-
-<section class="header">
-  <Header />
-</section>
 
 <section class="hero">
   <Hero />
@@ -51,17 +45,7 @@
   <Blog {articles} />
 </section>
 
-<section class="footer">
-  <Footer {articles} />
-</section>
-
 <style>
-  .header {
-    padding: 2rem 5rem;
-    background-color: var(--overlay);
-    min-height: 5vh;
-  }
-
   .hero {
     padding: 2rem 5rem;
     height: 100%;
@@ -100,11 +84,6 @@
     padding: 2rem 5rem;
   }
 
-  .footer {
-    min-height: 50vh;
-    padding: 2rem 5rem;
-  }
-
   @media (max-width: 376px) {
     .hero {
       height: 100% !important;
@@ -117,11 +96,6 @@
   @media (max-width: 1110px) {
     section {
       padding: 1rem !important;
-    }
-
-    .header {
-      padding: 1rem;
-      padding-top: 1.2rem !important;
     }
 
     .hero {
