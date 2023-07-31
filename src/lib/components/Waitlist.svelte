@@ -1,5 +1,6 @@
 <script lang="ts">
   export let form: any;
+  import Confirmation from "$lib/components/dropdown/confirmation.svelte";
 </script>
 
 <section id="waitlist">
@@ -16,27 +17,31 @@
 
   <div class="content">
     <form class="left-content" method="post">
-      {#if form?.missing}
-        <p>email is missing</p>
-      {:else if form?.error}
-        <p>{form?.message}</p>
-      {:else if form?.exists}
-        <p>email already exists</p>
-      {/if}
       <p>Join waitlist for to access your go to delivery service</p>
+      {#if form?.missing}
+      <p class="exists"><span><img src="/icons/attention-circle.svg" alt=""></span>Email is missing</p>
+      {:else if form?.error}
+        <p class="exists">{form?.message}</p>
+      {:else if form?.exists}
+      <p class="exists"><span><img src="/icons/attention-stop.svg" alt=""></span>Email already exists</p>
+      {/if}
       <div class="email">
         <input name="email" type="email" placeholder="Email Address" />
       </div>
       <button class="left-btn">Join</button>
     </form>
 
+    {#if form?.success}
+      <Confirmation />
+    {/if}
+
     <div class="line" />
 
     <div class="right-content">
       <p>Join our delivery agent waitlist</p>
-      <a href="/dispatcher/individual">Independent Dispatcher</a>
+      <a href="/dispatcher/individual">Independent Service Providers</a>
       <p class="center">Or</p>
-      <a href="/dispatcher/company">Company Dispatcher</a>
+      <a href="/dispatcher/company">Company Service Providers</a>
     </div>
   </div>
 </section>
@@ -124,6 +129,22 @@
     font-size: 0.89rem;
   }
 
+  .exists{
+    background-color: #e2747e;
+    border-radius: 6px;
+    width: fit-content;
+    padding: 0.4rem 0.7rem;
+    display: flex;
+    color: white;
+    padding-top: 0.6rem;
+    margin-top: 0.8%;
+  }
+
+  .exists img {
+    width: 25px;
+    padding-right: 0.3rem;
+  }
+
   .email {
     width: 90%;
     background-color: white;
@@ -132,7 +153,7 @@
     align-items: center;
     margin-bottom: 7px;
     border-radius: 4px;
-    margin-top: 5%;
+    margin-top: 1%;
     border: none;
   }
 
@@ -234,6 +255,20 @@
     .email {
       border-radius: 10px !important;
     }
+
+    .exists{
+    background-color: #e2747e;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 0.2rem 0.5rem;
+    display: flex;
+    color: white;
+    padding-top: 0.4rem;
+  }
+
+  .exists img{
+    width: 22px;
+  }
 
     .left-content,
     .right-content p {

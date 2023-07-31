@@ -75,16 +75,16 @@
       </div>
 
       {#if form?.missing}
-        <p>Please complete the form</p>
+        <p class="exists"><span><img src="/icons/attention-circle.svg" alt=""></span>Please complete the form</p>
       {:else if form?.error}
-        <p>{form?.message}</p>
+        <p class="exists">{form?.message}</p>
       {:else if form?.exists}
-        <p>email already exists</p>
+        <p class="exists"><span><img src="/icons/attention-stop.svg" alt=""></span>Email already exists</p>
       {/if}
 
       <form method="post">
         {#if $page.params.slug == "individual"}
-          <h1>Individual dispatcher form</h1>
+          <h1>Independent service provider form</h1>
           <label for="name">Name</label>
           <input
             type="text"
@@ -94,7 +94,7 @@
             required
           />
         {:else}
-          <h1>Company's dispatch form</h1>
+          <h1>Company service provider form</h1>
           <label for="company">Company's Name</label>
           <input
             type="text"
@@ -254,6 +254,21 @@
   /*   z-index: 0; */
   /* } */
 
+  .exists{
+    background-color: #e2747e;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 0.4rem 0.7rem;
+    display: flex;
+    color: white;
+    padding-top: 0.6rem;
+  }
+
+  .exists img {
+    width: 25px;
+    padding-right: 0.3rem;
+  }
+
   .waitlist-group {
     display: flex;
     flex-direction: column;
@@ -282,11 +297,11 @@
   }
 
   form h1 {
-    font-size: 40px;
+    font-size: 35px;
     font-family: Syne;
     font-weight: bold;
     line-height: normal;
-    width: 80%;
+    width: fit-content;
   }
 
   form input {
@@ -419,8 +434,8 @@
     }
 
     form h1 {
-      font-size: 1.85rem;
-      width: 100%;
+      font-size: 1.7rem;
+      width: fit-content;
       padding-top: 10px;
       margin-bottom: 12px;
     }
@@ -463,6 +478,17 @@
       width: 50px;
       height: 50px;
     }
+
+    .exists{
+    background-color: #e2747e;
+    border-radius: 6px;
+    width: fit-content;
+    padding: 0.2rem 0.5rem;
+    display: flex;
+    color: white;
+    padding-top: 0.4rem;
+  }
+
   }
 
   @media (max-width: 320px) {

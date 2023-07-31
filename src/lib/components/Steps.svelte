@@ -30,7 +30,7 @@ import Btn from "./Btn.svelte";
                 </div>
                 <p>Book a delivery schedule.</p>
             </div>
-            <button>Download Mobile App</button>
+            <!-- <button>Download Mobile App</button> -->
         </div>
 
 
@@ -52,6 +52,7 @@ section{
     justify-content: center;
     align-items: center;
     padding-bottom: 2rem;
+    margin-left: 1rem;
 }
 
 .heading h3{
@@ -178,6 +179,11 @@ button {
   }
 
   @media (min-width: 320px) and (max-width: 1110px){
+
+    section{
+    margin-left: 0 !important;
+    }
+
     .container {
     flex-direction: column;
     gap: 2rem;

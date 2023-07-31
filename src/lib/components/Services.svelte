@@ -1,5 +1,25 @@
 <script>
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     const prevBtn = document.querySelector('.prev');
+        //     const nextBtn = document.querySelector('.next');
+        //     const slides = document.querySelector('.slides');
 
+        //     prevBtn.addEventListener('click', function (event) {
+        //         event.preventDefault();
+        //         slides.scrollBy({
+        //             left: -400,
+        //             behavior: 'smooth'
+        //         });
+        //     });
+
+        //     nextBtn.addEventListener('click', function (event) {
+        //         event.preventDefault();
+        //         slides.scrollBy({
+        //             left: 400,
+        //             behavior: 'smooth'
+        //         });
+        //     });
+        // });
 </script>
 
 <section>
@@ -9,56 +29,64 @@
     <!--Web Slider Starts Here-->
     <div class="carousel">
         <div class="slider">
-            <div id="card-1" class="card">
-                <div>
-                    <img src="/images/dis-cycle.svg" alt="">
-                </div>
-                <div class="card-content">
-                    <div class="card-content-title">
-                        <img src="/icons/dis-cycle-logo.svg" alt="">
-                        <h3>2.5k</h3>
+            <div class="slides">
+                <div id="card-1" class="card">
+                    <div>
+                        <img src="/images/dis-cycle.svg" alt="">
                     </div>
-    
-                    <div class="card-content-desc">
-                        <h4>Bike Delivery</h4>
-                        <p>Sign up today to get access to our services as we connect you to your needs.</p>
+                    <div class="card-content">
+                        <div class="card-content-title">
+                            <img src="/icons/dis-cycle-logo.svg" alt="">
+                            <h3>2.5k</h3>
+                        </div>
+        
+                        <div class="card-content-desc">
+                            <h4>Bike Delivery</h4>
+                            <p>Sign up today to get access to our services as we connect you to your needs.</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+                <div id="card-2" class="card">
+                    <div>
+                        <img src="/images/bus.svg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-content-title">
+                            <img src="/icons/truck.svg" alt="">
+                            <h3>1k</h3>
+                        </div>
+        
+                        <div class="card-content-desc">
+                            <h4>Truck Delivery</h4>
+                            <p>Sign up today to get access to our services as we connect you to your needs.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="card-3" class="card">
+                    <div class="irr">
+                        <img src="/images/bicycle.svg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-content-title">
+                            <img src="/icons/person.svg" alt="">
+                            <h3>200+</h3>
+                        </div>
+        
+                        <div class="card-content-desc">
+                            <h4>Door to Door Delivery</h4>
+                            <p>Sign up today to get access to our services as we connect you to your needs.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-    
-    
-            <div id="card-2" class="card">
-                <div>
-                    <img src="/images/bus.svg" alt="">
-                </div>
-                <div class="card-content">
-                    <div class="card-content-title">
-                        <img src="/icons/truck.svg" alt="">
-                        <h3>1k</h3>
-                    </div>
-    
-                    <div class="card-content-desc">
-                        <h4>Truck Delivery</h4>
-                        <p>Sign up today to get access to our services as we connect you to your needs.</p>
-                    </div>
-                </div>
-            </div>
-    
-            <div id="card-3" class="card">
-                <div class="irr">
-                    <img src="/images/bicycle.svg" alt="">
-                </div>
-                <div class="card-content">
-                    <div class="card-content-title">
-                        <img src="/icons/person.svg" alt="">
-                        <h3>200+</h3>
-                    </div>
-    
-                    <div class="card-content-desc">
-                        <h4>Door to Door Delivery</h4>
-                        <p>Sign up today to get access to our services as we connect you to your needs.</p>
-                    </div>
-                </div>
+            
+            <!-- Slider Previous and Next Buttons -->
+            <div class="slider-but">
+                <button class="prev"><i class="fa-solid fa-chevron-left" style="color: #fafafa;"></i></button>
+                <button class="next"><i class="fa-solid fa-chevron-right" style="color: #fafafa;"></i></button>            
             </div>
         </div>
     </div>
@@ -67,55 +95,63 @@
 
     <div class="caro-sel">
         <div class="slider">
-            <div class="card-mob card-mob1">
-                <div>
-                    <img src="/images/Dispatch1.png" alt="">
-                </div>
-                <div class="card-mob-content">
-                    <div class="card-content-title">
-                        <img src="/icons/dis-cycle-logo.svg" alt="">
-                        <h3>2.5k</h3>
+            <div class="slides">
+                <div class="card-mob card-mob1">
+                    <div>
+                        <img src="/images/Dispatch1.png" alt="">
                     </div>
-
-                    <div class="card-content-desc">
-                        <h4>Bike Delivery</h4>
-                        <p>Sign up today to get access to our services as we connect you to your needs.</p>
+                    <div class="card-mob-content">
+                        <div class="card-content-title">
+                            <img src="/icons/dis-cycle-logo.svg" alt="">
+                            <h3>2.5k</h3>
+                        </div>
+    
+                        <div class="card-content-desc">
+                            <h4>Bike Delivery</h4>
+                            <p>Sign up today to get access to our services as we connect you to your needs.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card-mob">
+                    <div>
+                        <img src="/images/dispatch-truck.png" alt="">
+                    </div>
+                    <div class="card-mob-content">
+                        <div class="card-content-title">
+                            <img src="/icons/truck.svg" alt="">
+                            <h3>1k</h3>
+                        </div>
+    
+                        <div class="card-content-desc">
+                            <h4>Truck Delivery</h4>
+                            <p>Sign up today to get access to our services as we connect you to your needs.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card-mob">
+                    <div class="irr">
+                        <img src="/images/dispatch-cycle.png" alt="">
+                    </div>
+                    <div class="card-mob-content">
+                        <div class="card-content-title">
+                            <img src="/icons/person.svg" alt="">
+                            <h3>200+</h3>
+                        </div>
+    
+                        <div class="card-content-desc">
+                            <h4>Door to Door Delivery</h4>
+                            <p>Sign up today to get access to our services as we connect you to your needs.</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card-mob">
-                <div>
-                    <img src="/images/dispatch-truck.png" alt="">
-                </div>
-                <div class="card-mob-content">
-                    <div class="card-content-title">
-                        <img src="/icons/truck.svg" alt="">
-                        <h3>1k</h3>
-                    </div>
-
-                    <div class="card-content-desc">
-                        <h4>Truck Delivery</h4>
-                        <p>Sign up today to get access to our services as we connect you to your needs.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-mob">
-                <div class="irr">
-                    <img src="/images/dispatch-cycle.png" alt="">
-                </div>
-                <div class="card-mob-content">
-                    <div class="card-content-title">
-                        <img src="/icons/person.svg" alt="">
-                        <h3>200+</h3>
-                    </div>
-
-                    <div class="card-content-desc">
-                        <h4>Door to Door Delivery</h4>
-                        <p>Sign up today to get access to our services as we connect you to your needs.</p>
-                    </div>
-                </div>
+            <!-- Slider Previous and Next Buttons -->
+            <div class="slider-but">
+                <button class="prev"><i class="fa-solid fa-chevron-left" style="color: #fafafa;"></i></button>
+                <button class="next"><i class="fa-solid fa-chevron-right" style="color: #fafafa;"></i></button>            
             </div>
         </div>
     </div>
@@ -153,7 +189,7 @@ section{
     display: none;
 }
 
-.slider{
+.slides{
     display: grid;
     grid-auto-flow: column;
     scroll-behavior: auto;
@@ -166,7 +202,7 @@ section{
 
 }
 
-.slider::-webkit-scrollbar{
+.slides::-webkit-scrollbar{
     display: none;
 }
 
@@ -177,6 +213,7 @@ section{
     border-radius: 13px;
     background: #5E17CF;
     transition: 2s;
+    scroll-snap-type: start;
 }
 
 .card img{
@@ -262,6 +299,37 @@ section{
     margin-left: 2%;
 }
 
+.prev,
+.next {
+  background: #5E17CF;
+  border: none;
+  border-radius: 22px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: var(--secondary-color);
+}
+
+.prev {
+  margin-right: 10px;
+}
+
+.next {
+  margin-left: 10px;
+}
+
+.slider-but {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
 
 
 @media (min-width: 320px) and (max-width: 670px){
@@ -313,7 +381,7 @@ section{
         margin-left: -0.39rem;
     }
 
-    .slider{
+    .slides{
         gap: 2rem;
     }
 
