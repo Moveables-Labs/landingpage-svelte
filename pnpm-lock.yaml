@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -8,6 +8,9 @@ dependencies:
   '@fontsource/syne':
     specifier: ^5.0.3
     version: 5.0.5
+  '@fortawesome/fontawesome-free':
+    specifier: ^6.4.0
+    version: 6.4.2
   jsdom:
     specifier: ^22.1.0
     version: 22.1.0
@@ -255,6 +258,12 @@ packages:
 
   /@fontsource/syne@5.0.5:
     resolution: {integrity: sha512-v6nQcrGiNO7XKS5YCXiDBjXHYpRSOH/I80MZSNwZB9TU+cdnU+9ZzeCFl+ayajv4Xw9utSZW0363+hCzgi4rzg==}
+    dev: false
+
+  /@fortawesome/fontawesome-free@6.4.2:
+    resolution: {integrity: sha512-m5cPn3e2+FDCOgi1mz0RexTUvvQibBebOUlUlW0+YrMjDTPkiJ6VTKukA1GRsvRw+12KyJndNjj0O4AgTxm2Pg==}
+    engines: {node: '>=6'}
+    requiresBuild: true
     dev: false
 
   /@jridgewell/resolve-uri@3.1.0:
