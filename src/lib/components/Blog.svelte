@@ -27,9 +27,6 @@
     {:else}
       <p>Nothing to see here</p>
     {/each}
-
-    <div />
-    <div />
   </div>
 </section>
 

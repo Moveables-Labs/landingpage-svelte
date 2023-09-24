@@ -105,9 +105,5 @@
     .service {
       height: 100%;
     }
-
-    .blog {
-      display: none;
-    }
   }
 </style>
