@@ -286,7 +286,9 @@
   }
 
   .go-back a img {
-    width: 10px;
+    width: 17px;
+    padding-right: 0.3rem;
+    padding-top: 0.2rem;
   }
 
   form {

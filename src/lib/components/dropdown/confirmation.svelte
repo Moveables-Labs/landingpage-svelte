@@ -13,7 +13,7 @@
     </button>
 
     <div class="confirm-content">
-      <img src="/icons/approve.svg" alt="" class="confirm-approve" />
+      <img src="/icons/approve.png" alt="" class="confirm-approve" />
 
       <h3>You’ve been added to the waiting list</h3>
       <p>We’ll let you know when Moveables is ready.</p>
@@ -21,7 +21,7 @@
       <div class="card">
         <div class="email">
           <img src="/icons/email.svg" alt="" />
-          <p>hello@moveables.co</p>
+          <p>moveable.startup@gmail.com</p>
         </div>
         <p class="text">Moveables is coming to you soon.</p>
         <p class="text">You’ve now joined our mailing list to get updates.</p>
@@ -43,7 +43,7 @@
       <div class="card">
         <div class="email">
           <img src="/icons/email.svg" alt="" />
-          <p>hello@moveables.co</p>
+          <p>moveable.startup@gmail.com</p>
         </div>
         <p class="text">Moveables is coming to you soon.</p>
         <p class="text">You’ve now joined our mailing list to get updates.</p>
@@ -59,10 +59,11 @@
     display: flex;
     width: 480px;
     height: 470px;
-    background: rgba(199, 161, 249, 0.8);
+    background: #711DF9;
     backdrop-filter: blur(20px);
     top: 20%;
     left: 30%;
+    border-radius: 1.5625rem;
   }
 
   .cancel {
@@ -110,7 +111,7 @@
     height: 130px;
     border-radius: 6.998px;
     opacity: 0.8;
-    background: #727383;
+    background: #fff;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -141,6 +142,7 @@
   .text {
     font-size: 0.95rem !important;
     margin: 0 auto !important;
+    color: black !important;
   }
 
   @media (max-width: 767px) {
@@ -166,6 +168,7 @@
       display: flex;
       flex-direction: column;
       gap: 0.8rem !important;
+      border-radius: 0;
     }
 
     .complete {
@@ -229,6 +232,7 @@
       font-size: 0.68rem !important;
       margin: 0 auto !important;
       margin-top: 5px !important;
+      color: #fff !important;
     }
   }
 

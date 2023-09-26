@@ -63,15 +63,15 @@
     <div class="footer-column col last">
       <h4>Contact Us</h4>
       <ul>
-        <a class="contact" href="mailto:moveables@gmail.com">
+        <a class="contact" href="mailto:moveable.startup@gmail.com">
           <img src="/icons/mail.svg" alt="" />
-          <li>moveables@gmail.com</li></a
+          <li>moveable.startup@gmail.com</li></a
         >
 
-        <div class="contact">
+        <a class="contact" href="tel:+2347025296409">
           <img src="/icons/phone.svg" alt="" />
-          <li>+234 554 665 7778</li>
-        </div>
+          <li>+2347025296409</li>
+        </a>
 
         <div class="contact">
           <img src="/icons/location.svg" alt="" />
@@ -201,6 +201,11 @@
     }
 
     .col {
+      flex-direction: column;
+    }
+
+    .last ul{
+      display: flex;
       flex-direction: column;
     }
 
