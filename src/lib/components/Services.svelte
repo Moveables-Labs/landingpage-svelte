@@ -34,7 +34,7 @@
       <div class="slides" bind:this={slides}>
         <div id="card-1" class="card">
           <div>
-            <img src="/images/dis-cycle.svg" alt="" />
+            <img src="/images/Dispatch1.png" alt="" />
           </div>
           <div class="card-content">
             <div class="card-content-title">
@@ -54,7 +54,7 @@
 
         <div id="card-2" class="card">
           <div>
-            <img src="/images/bus.svg" alt="" />
+            <img src="/images/dispatch-truck.png" alt="" />
           </div>
           <div class="card-content">
             <div class="card-content-title">
@@ -74,7 +74,7 @@
 
         <div id="card-3" class="card">
           <div class="irr">
-            <img src="/images/bicycle.svg" alt="" />
+            <img src="/images/dispatch-cycle.png" alt="" />
           </div>
           <div class="card-content">
             <div class="card-content-title">

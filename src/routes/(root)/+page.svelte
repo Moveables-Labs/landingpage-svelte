@@ -50,7 +50,7 @@
     padding: 2rem 5rem;
     height: 100%;
     background: linear-gradient(180deg, var(--overlay), transparent),
-      url("/images/overlay.svg") no-repeat center center / cover;
+      url("/images/overlay.png") no-repeat center center / cover;
   }
 
   .service {
