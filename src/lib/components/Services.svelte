@@ -113,8 +113,8 @@
     <div class="slider">
       <div class="slides">
         <div class="card-mob card-mob1">
-          <div>
-            <img src="/images/Dispatch1.png" alt="" />
+          <div class="irr2">
+            <img src="/images/Dispatch1-mol.png" alt="" />
           </div>
           <div class="card-mob-content">
             <div class="card-content-title">
@@ -134,7 +134,7 @@
 
         <div class="card-mob">
           <div>
-            <img src="/images/dispatch-truck.png" alt="" />
+            <img src="/images/dispatch-truck-mol.png" alt="" />
           </div>
           <div class="card-mob-content">
             <div class="card-content-title">
@@ -154,7 +154,7 @@
 
         <div class="card-mob">
           <div class="irr">
-            <img src="/images/dispatch-cycle.png" alt="" />
+            <img src="/images/dispatch-cycle-mol.png" alt="" />
           </div>
           <div class="card-mob-content">
             <div class="card-content-title">
@@ -175,17 +175,13 @@
 
       <!-- Slider Previous and Next Buttons -->
       <div class="slider-but">
-        <button class="prev"
-          ><i
-            class="fa-solid fa-chevron-left"
-            style="color: #fafafa;"
-          /></button
+        <button class="prev" bind:this={prevBtn}
+          ><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><style>svg{fill:#ffffff}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+          </button
         >
-        <button class="next"
-          ><i
-            class="fa-solid fa-chevron-right"
-            style="color: #fafafa;"
-          /></button
+        <button class="next" bind:this={nextBtn}
+          ><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><style>svg{fill:#ffffff}</style><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+          </button
         >
       </div>
     </div>
@@ -405,9 +401,10 @@
     }
 
     .irr img {
-      width: 17.42rem;
+      width: 17.53rem;
       height: 100%;
       margin-left: -0.39rem;
+      margin-top: -2.3%;
     }
 
     .slides {
@@ -416,6 +413,10 @@
 
     .card-mob1 {
       margin-left: -3rem;
+    }
+
+    .irr2 img{
+      margin-top: -0.05%;
     }
 
     .carousel {

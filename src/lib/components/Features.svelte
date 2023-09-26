@@ -198,7 +198,7 @@ section{
 }
 
 .right-top-card-img {
-  width: 111%;
+  width: 100%;
   margin-top: -0.1rem;
   border-top-left-radius: 6px;
   border-top-right-radius: 10px;
@@ -289,11 +289,11 @@ section{
 
   .left-cards{
     gap: 1rem;
-    width: 50%;
+    width: 51%;
   }
 
   .right-cards{
-    width: 50%;
+    width: 49%;
   }
 
   .left-card-img {
