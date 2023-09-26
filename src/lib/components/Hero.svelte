@@ -18,18 +18,18 @@
   </div>
 
   <div class="photo-container">
-    <img src="/images/inter-state.svg" alt="" class="inter" />
+    <img src="/images/inter-state.png" alt="" class="inter" />
     <img
-      src="/images/hero-image1.svg"
+      src="/images/hero-image1.png"
       alt="A man holding a package"
       class="image1"
     />
     <img
-      src="/images/hero-image2.svg"
+      src="/images/hero-image2.png"
       alt="A woman holding a package"
       class="image2"
     />
-    <img src="/images/track-card.svg" alt="" class="track" />
+    <img src="/images/track-card.png" alt="" class="track" />
   </div>
 </section>
 

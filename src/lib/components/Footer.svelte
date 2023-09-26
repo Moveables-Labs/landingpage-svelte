@@ -212,6 +212,10 @@
     .last li {
       padding-left: 0.5rem;
     }
+    
+    .socials{
+      gap: 1rem;
+    }
   }
 </style>
 
