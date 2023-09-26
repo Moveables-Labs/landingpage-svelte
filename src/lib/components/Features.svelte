@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="left-card left-card-mob">
-                <img class="left-card-img" src="/images/geotracking.svg" alt="Card image cap">
+                <img class="left-card-img" src="/images/geotracking.png" alt="Card image cap">
                 <div class="left-card-body">
                   <div class="left-card-text">
                         <h3 class="titles">GPS TRACKING & GEO LOCATION</h3>
@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div class="left-card left-card-mob">
-                <img class="left-card-img" src="/images/time.svg" alt="Card image cap">
+                <img class="left-card-img" src="/images/time.png" alt="Card image cap">
                 <div class="left-card-body">
                   <div class="left-card-text">
                         <h3 class="titles">TIMELY</h3>
@@ -50,7 +50,7 @@
         </div>
 
         <div class="right-cards">
-            <div class="right-top-card">
+            <div class="right-top-card right-card">
                 <img class="right-top-card-img" src="/images/communication.svg" alt="Card image cap">
                 <div class="right-card-body">
                   <div class="right-card-text">
@@ -60,7 +60,7 @@
                 </div>
             </div>
 
-            <div class="right-bottom-card">
+            <div class="right-bottom-card right-card">
                 <img class="right-bottom-card-img" src="/images/thumbs.svg" alt="Card image cap">
                 <div class="right-card-body">
                   <div class="right-card-text">
@@ -69,6 +69,26 @@
                     </div>
                 </div>
             </div>
+
+            <div class="right-top-card right-card-mob">
+              <img class="right-top-card-img" src="/images/communication.png" alt="Card image cap">
+              <div class="right-card-body">
+                <div class="right-card-text">
+                      <h3 class="titles">QUICK COMMUNICATION</h3>
+                      <p>Quick and easy in-app communication between drivers and clients.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="right-bottom-card right-card-mob">
+              <img class="right-bottom-card-img" src="/images/thumbs.png" alt="Card image cap">
+              <div class="right-card-body">
+                <div class="right-card-text">
+                      <h3 class="titles">RELIABLE</h3>
+                      <p>Guaranteed assurance that deliveries make it to destinations without any mishaps.</p>
+                  </div>
+              </div>
+          </div>
         </div>
     </div>
 </section>
@@ -125,7 +145,6 @@ section{
 
 .left-card{
   width: 97%;
-  border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-top-left-radius: 14px;
@@ -136,10 +155,13 @@ section{
   display: none;
 }
 
+.right-card-mob{
+  display: none;
+}
+
 .left-card-img {
   width: 100%;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-radius: 0.625rem 0.625rem 0rem 0rem
 }
 
 .left-card-body {
@@ -169,26 +191,25 @@ section{
 
 .right-top-card{
   width: 100%;
-  border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-top-left-radius: 14px;
-  border-top-right-radius: 14px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
 }
 
 .right-top-card-img {
-  width: 100%;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  width: 111%;
+  margin-top: -0.1rem;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 10px;
   
 }
 
 .right-bottom-card{
   width: 100%;
-  border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-top-left-radius: 14px;
+  border-top-left-radius: 18px;
   border-top-right-radius: 14px;
 }
 
@@ -245,6 +266,17 @@ section{
     border-bottom-left-radius: 14px;
   }
 
+  .right-card{
+    display: none;
+    
+  }
+
+  .right-card-mob{
+    display: block;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+  }
+
   .left-card-body{
     border-bottom-right-radius: 14px;
     border-bottom-left-radius: 14px;
@@ -257,11 +289,11 @@ section{
 
   .left-cards{
     gap: 1rem;
-    width: 51%;
+    width: 50%;
   }
 
   .right-cards{
-    width: 49%;
+    width: 50%;
   }
 
   .left-card-img {

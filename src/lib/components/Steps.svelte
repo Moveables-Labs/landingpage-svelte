@@ -38,7 +38,7 @@ import Btn from "./Btn.svelte";
             <img src="/images/couriers.svg" alt="">
         </div>
         <div class="image-mob">
-            <img src="/images/couriers.svg" alt="">
+            <img src="/images/couriers-mol.png" alt="">
         </div>
     </div>
 </section>

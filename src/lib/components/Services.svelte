@@ -371,6 +371,7 @@
 
     .card-mob img {
       height: 98%;
+      width: 100.3%;
     }
 
     .card-content-title img {
@@ -404,7 +405,7 @@
     }
 
     .irr img {
-      width: 17.44rem;
+      width: 17.42rem;
       height: 100%;
       margin-left: -0.39rem;
     }
