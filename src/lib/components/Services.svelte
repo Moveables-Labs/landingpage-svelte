@@ -254,8 +254,8 @@
   }
 
   .irr img {
-    height: 102%;
-    margin-top: -1%;
+    height: 102.5%;
+    margin-top: -1.2%;
   }
 
   .card-content {

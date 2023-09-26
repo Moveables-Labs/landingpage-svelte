@@ -5,7 +5,7 @@
 
 <section id="waitlist">
   <p class="launch">
-    <span><img src="/icons/space.svg" alt="" /></span>Launching soon!!!!!
+    <span><img src="/icons/space.png" alt="" /></span>Launching soon!!!!!
   </p>
   <div class="heading">
     <h3>Join our waitlist</h3>
