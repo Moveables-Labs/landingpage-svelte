@@ -55,7 +55,6 @@ import AboutBtn from "./about-btn.svelte";
 
     .hero{
         margin-top: 16rem;
-        padding-bottom: 2rem;
         margin-bottom: 2rem;
     }
 
