@@ -20,12 +20,12 @@
   <div class="photo-container">
     <img src="/images/inter-state.png" alt="" class="inter" />
     <img
-      src="/images/image1-new.svg"
+      src="/images/image1-new.png"
       alt="A man holding a package"
       class="image1"
     />
     <img
-      src="/images/image2-new.svg"
+      src="/images/image2-new.png"
       alt="A woman holding a package"
       class="image2"
     />
