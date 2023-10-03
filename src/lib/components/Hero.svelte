@@ -20,12 +20,12 @@
   <div class="photo-container">
     <img src="/images/inter-state.png" alt="" class="inter" />
     <img
-      src="/images/hero-image1.png"
+      src="/images/image1-new.svg"
       alt="A man holding a package"
       class="image1"
     />
     <img
-      src="/images/hero-image2.png"
+      src="/images/image2-new.svg"
       alt="A woman holding a package"
       class="image2"
     />
@@ -108,7 +108,7 @@
   .image2 {
     z-index: 1;
     position: absolute;
-    top: -5%;
+    top: -7%;
     right: 0%;
     width: 39%;
   }

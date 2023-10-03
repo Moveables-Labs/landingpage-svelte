@@ -1,7 +1,7 @@
 import * as superagent from "superagent";
 import * as jsdom from "jsdom";
 
-import type { PageServerLoad } from "./$types";
+import type { PageServerLoad } from "./(root)/$types";
 import type { Article } from "$lib/assets/scripts/custom_types";
 
 export const load: PageServerLoad = async () => {

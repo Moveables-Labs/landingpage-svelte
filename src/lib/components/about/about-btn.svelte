@@ -16,21 +16,17 @@
     border: none;
     border-radius: 50px;
     padding: 0.85rem 1.5rem;
-    background: linear-gradient(
-      180deg,
-      rgba(113, 29, 249, 0.9) 0%,
-      rgba(113, 29, 249, 0.28) 100%
-    );
+    background: #030655;
     cursor: pointer;
     margin: auto;
   }
 
   button:hover {
-    background: var(--btn-hover, #711df9);
+    background: var(--btn-hover, #030655);
   }
 
   button:active {
-    background: var(--btn-active, #8d4afa);
+    background: var(--btn-active, #030655);
   }
 
   @media (max-width: 767px){

@@ -1,5 +1,5 @@
 <script>
-import AboutBtn from "./about-btn.svelte";
+  import Btn from "../Btn.svelte";
 </script>
 
 <div class="container">
@@ -15,7 +15,7 @@ import AboutBtn from "./about-btn.svelte";
         </div>
       </a>
     <div class="mob-hide">
-        <AboutBtn>Get Started</AboutBtn>
+        <Btn>Get Started</Btn>
     </div>
 </div>
 
@@ -34,7 +34,7 @@ import AboutBtn from "./about-btn.svelte";
 p{
     margin: 0 auto;
     color: var(--textdark, #35364B);
-    font-size: clamp(30px, 10px, 40px);
+    font-size: clamp(25px, 30px, 20px);
     width: clamp(100%, 60%, 45%);
     text-align: center;
     font-weight: 700;
