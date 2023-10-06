@@ -3,6 +3,7 @@
 
   import "$lib/assets/styles/global.css";
   import Hero from "$lib/components/Hero.svelte";
+  import Header from "$lib/components/Header.svelte";
   import Services from "$lib/components/Services.svelte";
   import Steps from "$lib/components/Steps.svelte";
   import Features from "$lib/components/Features.svelte";
@@ -20,6 +21,10 @@
     console.log(data.articles);
   }
 </script>
+
+<section class="header">
+  <Header />
+</section>
 
 <section class="hero">
   <Hero />
@@ -46,6 +51,12 @@
 </section>
 
 <style>
+  .header {
+    padding: 2rem 5rem;
+    background-color: var(--overlay);
+    min-height: 5vh;
+  }
+
   .hero {
     padding: 2rem 5rem;
     height: 100%;
@@ -85,6 +96,11 @@
   }
 
   @media (max-width: 376px) {
+    .header {
+      padding: 1rem;
+      padding-top: 1.2rem !important;
+    }
+
     .hero {
       height: 100% !important;
     }
