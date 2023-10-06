@@ -1,19 +1,11 @@
 <script>
-  import Btn from "../Btn.svelte";
+  import Btn from "./about-btn.svelte";
 </script>
 
 <div class="container">
     <img src="/images/conclusion.svg" alt="" class="conclusion">
-    <p>Join us today, as we venture into 
-        uncharted territory. 
-        <br>As we venture into the future of logistics. As we venture into 
+    <p>Join us today, as we venture into the <span class="purple">future</span> of logistics.
     </p>
-    <a href="/">
-        <div class="logo">
-          <img src="/images/logo.svg" alt="logo" class="logo-pic"/>
-          <img src="/images/logo-text.svg" alt="logo-text" class="logo-text"/>
-        </div>
-      </a>
     <div class="mob-hide">
         <Btn>Get Started</Btn>
     </div>
@@ -34,7 +26,7 @@
 p{
     margin: 0 auto;
     color: var(--textdark, #35364B);
-    font-size: clamp(25px, 30px, 20px);
+    font-size: clamp(40px, 30px, 20px);
     width: clamp(100%, 60%, 45%);
     text-align: center;
     font-weight: 700;
@@ -65,6 +57,10 @@ a{
     width: clamp(70px, 120px, 20px);
 }
 
+.purple{
+    color: var(--text-hover);
+}
+
 @media (max-width: 767px){
     .container{
         width: 100%;
@@ -74,10 +70,5 @@ a{
         width: 350px;
         margin: auto;
     }
-
-    .mob-hide{
-        display: none;
-    }
-
 }
 </style>
