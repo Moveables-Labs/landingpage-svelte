@@ -124,9 +124,12 @@
     padding-left: 2rem;
   }
 
-  .left-content,
-  .right-content p {
+  .left-content p {
     font-size: 0.89rem;
+  }
+
+  .right-content p{
+    font-size: 14px;
   }
 
   .exists{

@@ -89,8 +89,8 @@ section{
     font-size: 1rem;
     font-family: Manrope;
     font-weight: 400;
-    border: 3px solid var(--purple);
-    border-radius: 30px;
+    border: 2px solid var(--purple);
+    border-radius: 10px;
     width: 73%;
     position: relative;
 }
@@ -108,8 +108,8 @@ section{
 .float{
     background: #8D4AFA;
     color: white;
-    width: 50px; 
-    height: 50px; 
+    width: 30px; 
+    height: 30px; 
     padding: 10px;
     border-radius: 100px; 
     flex-direction: column; 
@@ -117,8 +117,8 @@ section{
     align-items: center;
     display: flex;
     position: absolute;
-    top: -30%;
-    left: -9%;
+    top: -25%;
+    left: -8%;
 }
 
 .line{
@@ -204,10 +204,14 @@ button {
 
     .float{
         font-size: 0.86rem;
-        width: 45px;
-        height: 45px;
+        width: 35px;
+        height: 35px;
         top: -17%;
-        left: -9%;
+        left: -6%;
+    }
+
+    .steps{
+        width: 90%;
     }
 
     .steps p{
